@@ -1,18 +1,21 @@
 body {
-	margin: 0 auto 0 auto;
-	width: 600px;
-	background-color: #999999;
+	background-color: dimgray;
 	font-family: 'Lato', sans-serif;
 	color: #e6e6e9;
 }
 
+.container {
+	margin: 0 auto 0 auto;
+	width: 900px;
+}
+
 h3, h1, h2	{
-	color: lightgray;
+	color: darkorange;
 }
 .line {
 	color: #f4f4f6;
 	background-color: #f4f4f6;
-	width: 600px;
+	width: 800px;
 	height:3px;
 	border: none;
 }
@@ -20,8 +23,10 @@ h3, h1, h2	{
 strong {
 	font-size: large;
 }
-a {
-	display: inline-block;
-	justify-content: space-around;
-	color: white;
+
+
+iframe[alt*="Desktop"]{
+	width: 1200px;
+	background-color: dimgray;
+	padding-left: 20em;;
 }
