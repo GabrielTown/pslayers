@@ -1,22 +1,23 @@
 body {
-	background-color: dimgray;
+	background-color: #707070;
 	font-family: 'Lato', sans-serif;
 	color: #e6e6e9;
 }
 
 .container {
 	margin: 0 auto 0 auto;
-	width: 900px;
+	width: 600px;
 }
 
 h3, h1, h2	{
-	color: darkorange;
+	font-size: x-large;
+	color: lightgray;
 }
 .line {
 	color: #f4f4f6;
 	background-color: #f4f4f6;
-	width: 800px;
-	height:3px;
+	width: 600px;
+	height:4px;
 	border: none;
 }
 
@@ -24,9 +25,18 @@ strong {
 	font-size: large;
 }
 
+iframe{
+	border: solid white;
+}
 
 iframe[alt*="Desktop"]{
-	width: 1200px;
-	background-color: dimgray;
-	padding-left: 20em;;
+	width: 1300px;
+	background-color: #707070;
+	justify-items: center;
+}
+
+.desktop{
+	display: flex;
+	background-color: #707070;
+	justify-content: center;
 }
