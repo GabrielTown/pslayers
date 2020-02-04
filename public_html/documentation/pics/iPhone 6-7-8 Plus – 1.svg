@@ -178,7 +178,7 @@
       }
     </style>
     <filter id="Background" x="0" y="0" width="414" height="64.5" filterUnits="userSpaceOnUse">
-      <feOffset dy="0.5" input="SourceAlpha"/>
+      <feOffset dy="0.5" />
       <feGaussianBlur result="blur"/>
       <feFlood flood-color="#fff" flood-opacity="0.161"/>
       <feComposite operator="in" in2="blur"/>
@@ -188,7 +188,7 @@
       <rect class="cls-1" width="402.5" height="16"/>
     </clipPath>
     <filter id="knob" x="326" y="1080.5" width="19" height="20.5" filterUnits="userSpaceOnUse">
-      <feOffset dy="3" input="SourceAlpha"/>
+      <feOffset dy="3" />
       <feGaussianBlur stdDeviation="0.5" result="blur-2"/>
       <feFlood flood-opacity="0.102"/>
       <feComposite operator="in" in2="blur-2"/>
@@ -222,95 +222,95 @@
       <rect width="414" height="4214"/>
     </clipPath>
   </defs>
-  <g id="iPhone_6_7_8_Plus_1" data-name="iPhone 6/7/8 Plus – 1" class="cls-3">
+  <g id="iPhone_6_7_8_Plus_1" class="cls-3">
     <rect class="cls-43" width="414" height="4214"/>
-    <g id="Path_4" data-name="Path 4" class="cls-4" transform="translate(-4.369 704)">
+    <g id="Path_4"  class="cls-4" transform="translate(-4.369 704)">
       <path class="cls-40" d="M 0.5000482201576233 743.4224243164063 L 0.5000482201576233 -17.5816764831543 L 422.8689575195313 46.96250915527344 L 422.8689575195313 684.114013671875 L 0.5000482201576233 743.4224243164063 Z"/>
       <path class="cls-41" d="M 0.99993896484375 -16.99951171875 L 0.99993896484375 742.8472290039063 L 422.3688354492188 683.6792602539063 L 422.3688354492188 47.3919677734375 L 0.99993896484375 -16.99951171875 M -6.103515625e-05 -18.1639404296875 L 423.3688354492188 46.533203125 L 423.3688354492188 684.5487060546875 L -6.103515625e-05 743.9974975585938 L -6.103515625e-05 -18.1639404296875 Z"/>
     </g>
-    <g id="Path_1" data-name="Path 1" class="cls-4" transform="translate(-7.369 2023)">
+    <g id="Path_1"  class="cls-4" transform="translate(-7.369 2023)">
       <path class="cls-40" d="M 0.5000482201576233 743.4224243164063 L 0.5000482201576233 -17.5816764831543 L 422.8689575195313 46.96250915527344 L 422.8689575195313 684.114013671875 L 0.5000482201576233 743.4224243164063 Z"/>
       <path class="cls-41" d="M 0.99993896484375 -16.99951171875 L 0.99993896484375 742.8472290039063 L 422.3688354492188 683.6792602539063 L 422.3688354492188 47.3919677734375 L 0.99993896484375 -16.99951171875 M -6.103515625e-05 -18.1639404296875 L 423.3688354492188 46.533203125 L 423.3688354492188 684.5487060546875 L -6.103515625e-05 743.9974975585938 L -6.103515625e-05 -18.1639404296875 Z"/>
     </g>
-    <g id="Navigation_Bar" data-name="Navigation Bar">
+    <g id="Navigation_Bar" >
       <g class="cls-45" transform="matrix(1, 0, 0, 1, 0, 0)">
-        <rect id="Background-2" data-name="Background" class="cls-5" width="414" height="64"/>
+        <rect id="Background-2"  class="cls-5" width="414" height="64"/>
       </g>
       <text id="Title" class="cls-6" transform="translate(32 31)"><tspan x="106.587" y="18">Photoshop Layers</tspan></text>
     </g>
-    <g id="Light_Status_Bar" data-name="Light Status Bar" class="cls-7" transform="translate(6 1.5)">
-      <g id="Right_Detail" data-name="Right Detail" transform="translate(329.5 2)">
+    <g id="Light_Status_Bar"  class="cls-7" transform="translate(6 1.5)">
+      <g id="Right_Detail"  transform="translate(329.5 2)">
         <g id="battery" transform="translate(10.5)">
-          <g id="Battery-2" data-name="Battery" transform="translate(36 1)">
-            <g id="Battery_Outline" data-name="Battery Outline" class="cls-8">
+          <g id="Battery-2"  transform="translate(36 1)">
+            <g id="Battery_Outline"  class="cls-8">
               <path class="cls-40" d="M0,2.5A2.5,2.5,0,0,1,2.5,0h19A2.5,2.5,0,0,1,24,2.5V9a2.5,2.5,0,0,1-2.5,2.5H2.5A2.5,2.5,0,0,1,0,9Z"/>
               <path class="cls-42" d="M 2.5 1 C 1.67289924621582 1 1 1.672900199890137 1 2.5 L 1 9 C 1 9.827099800109863 1.67289924621582 10.5 2.5 10.5 L 20.14764022827148 10.5 L 21.5 10.5 C 22.32710075378418 10.5 23 9.827099800109863 23 9 L 23 2.5 C 23 1.672900199890137 22.32710075378418 1 21.5 1 L 2.5 1 M 2.5 0 L 21.5 0 C 22.88071060180664 0 24 1.119290351867676 24 2.5 L 24 9 C 24 10.38070964813232 22.88071060180664 11.5 21.5 11.5 L 20.14764022827148 11.5 L 0 11.5 L 2.5 11.5 C 1.119289398193359 11.5 0 10.38070964813232 0 9 L 0 2.5 C 0 1.119290351867676 1.119289398193359 0 2.5 0 Z"/>
             </g>
-            <path id="Battery_Connector" data-name="Battery Connector" class="cls-9" d="M0,0A2.251,2.251,0,0,1,1.5,2.122,2.252,2.252,0,0,1,0,4.244Z" transform="translate(25 3.628)"/>
-            <rect id="Battery_Fill" data-name="Battery Fill" class="cls-2" width="20" height="7.5" rx="1" transform="translate(2 2)"/>
+            <path id="Battery_Connector"  class="cls-9" d="M0,0A2.251,2.251,0,0,1,1.5,2.122,2.252,2.252,0,0,1,0,4.244Z" transform="translate(25 3.628)"/>
+            <rect id="Battery_Fill"  class="cls-2" width="20" height="7.5" rx="1" transform="translate(2 2)"/>
           </g>
-          <text id="_100_" data-name="100%" class="cls-10"><tspan x="3.773" y="13">100%</tspan></text>
+          <text id="_100_"  class="cls-10"><tspan x="3.773" y="13">100%</tspan></text>
         </g>
         <path id="bluetooth" class="cls-2" d="M3,12V7.249L.75,9.5,0,8.75,2.75,6,0,3.25.75,2.5,3,4.75V0L7,3.5,4.25,6,7,8.5,3,12ZM4,7H4V9.75L5.5,8.459,4,7ZM4,2.37V5L5.5,3.6Z" transform="translate(0 0.5)"/>
       </g>
       <text id="Time" class="cls-11" transform="translate(181.5 13)"><tspan x="-21.891" y="0">9:41 AM</tspan></text>
-      <g id="Left_Detail" data-name="Left Detail" transform="translate(0 3.5)">
+      <g id="Left_Detail"  transform="translate(0 3.5)">
         <path id="Signal" class="cls-2" d="M14.25,10a.75.75,0,0,1-.75-.75V.75A.75.75,0,0,1,14.25,0h1.5a.75.75,0,0,1,.75.75v8.5a.75.75,0,0,1-.75.75Zm-4.5,0A.75.75,0,0,1,9,9.25V2.75A.75.75,0,0,1,9.75,2h1.5A.75.75,0,0,1,12,2.75v6.5a.75.75,0,0,1-.75.75Zm-4.5,0a.75.75,0,0,1-.75-.75V4.75A.751.751,0,0,1,5.25,4h1.5a.751.751,0,0,1,.75.751v4.5a.75.75,0,0,1-.75.75ZM.75,10A.75.75,0,0,1,0,9.25v-3A.75.75,0,0,1,.75,5.5h1.5A.75.75,0,0,1,3,6.25v3a.75.75,0,0,1-.75.75Z"/>
         <path id="Wifi" class="cls-12" d="M4.882,7.377a2.877,2.877,0,0,1,3.246,0L6.505,9ZM6.5,4.62A5.1,5.1,0,0,0,3.273,5.767l-.882-.882a6.364,6.364,0,0,1,8.225,0l-.882.882A5.1,5.1,0,0,0,6.5,4.62ZM0,2.494a9.733,9.733,0,0,1,13.012,0l-.885.885a8.484,8.484,0,0,0-11.241,0Z" transform="translate(20.994 0.5)"/>
       </g>
     </g>
-    <text id="_Sed_ut_perspiciatis_unde_omnis_iste_natus_error_sit_voluptatem_accusantium_doloremque_laudantium_totam_rem_aperiam_eaque_ipsa_quae_ab_illo_inventore_veritatis_et_quasi_architecto_beatae_vitae_dicta_sunt_explicabo._Nemo_enim_ipsam_voluptatem_quia_volupta" data-name="&quot;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia volupta" class="cls-13" transform="translate(52 175)"><tspan x="0" y="10">&quot;Sed ut perspiciatis unde omnis iste natus error sit </tspan><tspan x="0" y="32">voluptatem accusantium doloremque laudantium, totam </tspan><tspan x="0" y="54">rem aperiam, eaque ipsa quae ab illo inventore veritatis et </tspan><tspan x="0" y="76">quasi architecto beatae vitae dicta sunt explicabo. Nemo </tspan><tspan x="0" y="98">enim ipsam voluptatem quia voluptas sit aspernatur aut </tspan><tspan x="0" y="120">odit aut fugit, sed quia consequuntur magni dolores eos qui </tspan><tspan x="0" y="142">ratione voluptatem sequi nesciunt. Neque porro quisquam </tspan><tspan x="0" y="164">est, qui dolorem ipsum quia dolor sit amet, consectetur, </tspan></text>
+    <text id="_Sed_ut_perspiciatis_unde_omnis_iste_natus_error_sit_voluptatem_accusantium_doloremque_laudantium_totam_rem_aperiam_eaque_ipsa_quae_ab_illo_inventore_veritatis_et_quasi_architecto_beatae_vitae_dicta_sunt_explicabo._Nemo_enim_ipsam_voluptatem_quia_volupta"  class="cls-13" transform="translate(52 175)"><tspan x="0" y="10">&quot;Sed ut perspiciatis unde omnis iste natus error sit </tspan><tspan x="0" y="32">voluptatem accusantium doloremque laudantium, totam </tspan><tspan x="0" y="54">rem aperiam, eaque ipsa quae ab illo inventore veritatis et </tspan><tspan x="0" y="76">quasi architecto beatae vitae dicta sunt explicabo. Nemo </tspan><tspan x="0" y="98">enim ipsam voluptatem quia voluptas sit aspernatur aut </tspan><tspan x="0" y="120">odit aut fugit, sed quia consequuntur magni dolores eos qui </tspan><tspan x="0" y="142">ratione voluptatem sequi nesciunt. Neque porro quisquam </tspan><tspan x="0" y="164">est, qui dolorem ipsum quia dolor sit amet, consectetur, </tspan></text>
     <text id="Intro." class="cls-14" transform="translate(28 94)"><tspan x="0" y="24">Intro.</tspan></text>
-    <g id="Component_1_1" data-name="Component 1 – 1" transform="translate(35 405)">
-      <g id="Group_5" data-name="Group 5">
-        <g id="Rectangle_1" data-name="Rectangle 1" class="cls-15" transform="translate(18)">
+    <g id="Component_1_1"  transform="translate(35 405)">
+      <g id="Group_5"                    >
+        <g id="Rectangle_1" class="cls-15" transform="translate(18)">
           <rect class="cls-40" width="311" height="254"/>
           <rect class="cls-1" x="0.5" y="0.5" width="310" height="253"/>
         </g>
       </g>
-      <line id="Line_1" data-name="Line 1" class="cls-16" x1="311" y2="254" transform="translate(18.5 0.5)"/>
-      <line id="Line_2" data-name="Line 2" class="cls-16" x1="311" y1="254" transform="translate(17.5 0.5)"/>
-      <line id="Line_3" data-name="Line 3" class="cls-16" x1="311" y1="254" transform="translate(17.5 0.5)"/>
-      <g id="Rectangle_2" data-name="Rectangle 2" class="cls-15" transform="translate(0 631)">
+      <line id="Line_1"  class="cls-16" x1="311" y2="254" transform="translate(18.5 0.5)"/>
+      <line id="Line_2"  class="cls-16" x1="311" y1="254" transform="translate(17.5 0.5)"/>
+      <line id="Line_3" class="cls-16" x1="311" y1="254" transform="translate(17.5 0.5)"/>
+      <g id="Rectangle_2"  class="cls-15" transform="translate(0 631)">
         <rect class="cls-40" width="220" height="220"/>
         <rect class="cls-1" x="0.5" y="0.5" width="219" height="219"/>
       </g>
-      <g id="Rectangle_3" data-name="Rectangle 3" class="cls-15" transform="translate(252 670)">
+      <g id="Rectangle_3"  class="cls-15" transform="translate(252 670)">
         <rect class="cls-40" width="95" height="143"/>
         <rect class="cls-1" x="0.5" y="0.5" width="94" height="142"/>
       </g>
-      <g id="Rectangle_6" data-name="Rectangle 6" class="cls-15" transform="translate(253 1367)">
+      <g id="Rectangle_6"  class="cls-15" transform="translate(253 1367)">
         <rect class="cls-40" width="95" height="143"/>
         <rect class="cls-1" x="0.5" y="0.5" width="94" height="142"/>
       </g>
-      <g id="Rectangle_9" data-name="Rectangle 9" class="cls-15" transform="translate(0 1328)">
+      <g id="Rectangle_9"  class="cls-15" transform="translate(0 1328)">
         <rect class="cls-40" width="220" height="220"/>
         <rect class="cls-1" x="0.5" y="0.5" width="219" height="219"/>
       </g>
-      <g id="Path_3" data-name="Path 3" class="cls-17" transform="translate(0 2024)">
+      <g id="Path_3"  class="cls-17" transform="translate(0 2024)">
         <path class="cls-40" d="M 219.5 219.5 L 0.5 219.5 L 0.5 0.5 L 219.5 0.5 L 219.5 219.5 Z"/>
         <path class="cls-41" d="M 1 1 L 1 219 L 219 219 L 219 1 L 1 1 M 0 0 L 220 0 L 220 220 L 0 220 L 0 0 Z"/>
       </g>
-      <g id="Rectangle_12" data-name="Rectangle 12" class="cls-15" transform="translate(252 2063)">
+      <g id="Rectangle_12"  class="cls-15" transform="translate(252 2063)">
         <rect class="cls-40" width="95" height="143"/>
         <rect class="cls-1" x="0.5" y="0.5" width="94" height="142"/>
       </g>
     </g>
     <text id="Opacity." class="cls-14" transform="translate(268 768)"><tspan x="0" y="24">Opacity.</tspan></text>
-    <text id="_Sed_ut_perspiciatis_unde_omnis_iste_natus_error_sit_voluptatem_accusantium_doloremque_laudantium_totam_rem_aperiam_eaque_ipsa_quae_ab_illo_inventore_veritatis_et_quasi_architecto_beatae_vitae_dicta_sunt_explicabo._Nemo_enim_ipsam_voluptatem_quia_volupta-2" data-name="&quot;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia volupta" class="cls-13" transform="translate(52 878)"><tspan x="45.853" y="10">&quot;Sed ut perspiciatis unde omnis iste natus error sit </tspan><tspan x="14.631" y="32">voluptatem accusantium doloremque laudantium, totam </tspan><tspan x="6.191" y="54">rem aperiam, eaque ipsa quae ab illo inventore veritatis et </tspan></text>
-    <g id="Group_1" data-name="Group 1" transform="translate(103 6)">
-      <g id="Slider_-_No_Glyphs" data-name="Slider - No Glyphs" transform="translate(185 1061)">
-        <g id="Group_4" data-name="Group 4">
-          <g id="Background-3" data-name="Background">
-            <rect id="Background_background" data-name="Background background" class="cls-18" width="93" height="44"/>
-            <g id="Group_2" data-name="Group 2">
-              <rect id="Background_-_Default_Dark" data-name="Background - Default Dark" class="cls-2" width="93" height="44"/>
+    <text id="_Sed_ut_perspiciatis_unde_omnis_iste_natus_error_sit_voluptatem_accusantium_doloremque_laudantium_totam_rem_aperiam_eaque_ipsa_quae_ab_illo_inventore_veritatis_et_quasi_architecto_beatae_vitae_dicta_sunt_explicabo._Nemo_enim_ipsam_voluptatem_quia_volupta-2"  class="cls-13" transform="translate(52 878)"><tspan x="45.853" y="10">&quot;Sed ut perspiciatis unde omnis iste natus error sit </tspan><tspan x="14.631" y="32">voluptatem accusantium doloremque laudantium, totam </tspan><tspan x="6.191" y="54">rem aperiam, eaque ipsa quae ab illo inventore veritatis et </tspan></text>
+    <g id="Group_1"  transform="translate(103 6)">
+      <g id="Slider_-_No_Glyphs"  transform="translate(185 1061)">
+        <g id="Group_4" >
+          <g id="Background-3" >
+            <rect id="Background_background"  class="cls-18" width="93" height="44"/>
+            <g id="Group_2" >
+              <rect id="Background_-_Default_Dark"  class="cls-2" width="93" height="44"/>
             </g>
           </g>
-          <g id="Group_3" data-name="Group 3" transform="translate(16 14)">
+          <g id="Group_3"  transform="translate(16 14)">
             <rect id="track" class="cls-19" width="61" height="2" rx="1" transform="translate(0 7)"/>
             <g class="cls-44" transform="matrix(1, 0, 0, 1, -304, -1081)">
-              <g id="knob-2" data-name="knob" class="cls-20" transform="translate(328 1081)">
+              <g id="knob-2"  class="cls-20" transform="translate(328 1081)">
                 <circle class="cls-40" cx="7.5" cy="7.5" r="7.5"/>
                 <circle class="cls-1" cx="7.5" cy="7.5" r="7.75"/>
               </g>
@@ -322,22 +322,21 @@
         </g>
       </g>
     </g>
-    <line id="Line_4" data-name="Line 4" class="cls-16" y1="220" x2="218" transform="translate(35.5 1035.5)"/>
-    <line id="Line_5" data-name="Line 5" class="cls-16" x1="218" y1="220" transform="translate(35.5 1035.5)"/>
-    <text id="Blend_Options." data-name="Blend
-Options." class="cls-14" transform="translate(37 1466)"><tspan x="0" y="24">Blend</tspan><tspan x="0" y="52">Options.</tspan></text>
-    <text id="_Sed_ut_perspiciatis_unde_omnis_iste_natus_error_sit_voluptatem_accusantium_doloremque_laudantium_totam_rem_aperiam_eaque_ipsa_quae_ab_illo_inventore_veritatis_et_quasi_architecto_beatae_vitae_dicta_sunt_explicabo._Nemo_enim_ipsam_voluptatem_quia_volupta-3" data-name="&quot;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia volupta" class="cls-13" transform="translate(52 1594)"><tspan x="0" y="10">&quot;Sed ut perspiciatis unde omnis iste natus error sit </tspan><tspan x="0" y="32">voluptatem accusantium doloremque laudantium, totam </tspan><tspan x="0" y="54">rem aperiam, eaque ipsa quae ab illo inventore veritatis et </tspan></text>
+    <line id="Line_4"  class="cls-16" y1="220" x2="218" transform="translate(35.5 1035.5)"/>
+    <line id="Line_5"  class="cls-16" x1="218" y1="220" transform="translate(35.5 1035.5)"/>
+    <text id="Blend_Options." class="cls-14" transform="translate(37 1466)"><tspan x="0" y="24">Blend</tspan><tspan x="0" y="52">Options.</tspan></text>
+    <text id="_Sed_ut_perspiciatis_unde_omnis_iste_natus_error_sit_voluptatem_accusantium_doloremque_laudantium_totam_rem_aperiam_eaque_ipsa_quae_ab_illo_inventore_veritatis_et_quasi_architecto_beatae_vitae_dicta_sunt_explicabo._Nemo_enim_ipsam_voluptatem_quia_volupta-3"  class="cls-13" transform="translate(52 1594)"><tspan x="0" y="10">&quot;Sed ut perspiciatis unde omnis iste natus error sit </tspan><tspan x="0" y="32">voluptatem accusantium doloremque laudantium, totam </tspan><tspan x="0" y="54">rem aperiam, eaque ipsa quae ab illo inventore veritatis et </tspan></text>
     <g id="Touch" transform="translate(294 1775)">
       <g id="Labels">
-        <text id="Touch-2" data-name="Touch" class="cls-23" transform="translate(0 13.949)"><tspan x="0" y="0">Normal</tspan></text>
+        <text id="Touch-2"  class="cls-23" transform="translate(0 13.949)"><tspan x="0" y="0">Normal</tspan></text>
       </g>
       <g id="Controls" transform="translate(-3 17)">
-        <g id="Default_Touch_" data-name="Default (Touch)" class="cls-24">
-          <g id="Background-4" data-name="Background">
-            <g id="Saturation_Boost" data-name="Saturation Boost" class="cls-25">
-              <rect id="Saturation_Boost-2" data-name="Saturation Boost" class="cls-26" width="88" height="128"/>
-              <rect id="Saturation_Boost-3" data-name="Saturation Boost" class="cls-27" width="88" height="128"/>
-              <rect id="Saturation_Boost-4" data-name="Saturation Boost" class="cls-28" width="88" height="128"/>
+        <g id="Default_Touch_"  class="cls-24">
+          <g id="Background-4" >
+            <g id="Saturation_Boost"   class="cls-25">
+              <rect id="Saturation_Boost-2"   class="cls-26" width="88" height="128"/>
+              <rect id="Saturation_Boost-3"   class="cls-27" width="88" height="128"/>
+              <rect id="Saturation_Boost-4"   class="cls-28" width="88" height="128"/>
             </g>
             <rect id="Acrylic" class="cls-29" width="88" height="128"/>
             <g id="Noise" class="cls-30" transform="translate(-76)">
@@ -350,92 +349,92 @@ Options." class="cls-14" transform="translate(37 1466)"><tspan x="0" y="24">Blen
               <rect class="cls-1" x="0.5" y="0.5" width="87" height="127"/>
             </g>
           </g>
-          <g id="List_Items" data-name="List Items" class="cls-32">
-            <g id="_Elements_Context_Menu_Item_Touch_" data-name="_Elements / Context Menu Item (Touch)" class="cls-33" transform="translate(0 204)">
-              <rect id="Base_Fill_" data-name="Base (Fill)" class="cls-18" width="240" height="40"/>
-              <text id="List_Item" data-name="List Item" class="cls-34" transform="translate(11 26)"><tspan x="0" y="0">List Item</tspan></text>
+          <g id="List_Items"    class="cls-32">
+            <g id="_Elements_Context_Menu_Item_Touch_"    class="cls-33" transform="translate(0 204)">
+              <rect id="Base_Fill_"    class="cls-18" width="240" height="40"/>
+              <text id="List_Item"    class="cls-34" transform="translate(11 26)"><tspan x="0" y="0">List Item</tspan></text>
             </g>
-            <g id="_Elements_Context_Menu_Item_Touch_2" data-name="_Elements / Context Menu Item (Touch)" class="cls-33" transform="translate(0 164)">
-              <rect id="Base_Fill_2" data-name="Base (Fill)" class="cls-18" width="240" height="40"/>
-              <text id="List_Item-2" data-name="List Item" class="cls-34" transform="translate(11 26)"><tspan x="0" y="0">List Item</tspan></text>
+            <g id="_Elements_Context_Menu_Item_Touch_2"    class="cls-33" transform="translate(0 164)">
+              <rect id="Base_Fill_2"    class="cls-18" width="240" height="40"/>
+              <text id="List_Item-2"    class="cls-34" transform="translate(11 26)"><tspan x="0" y="0">List Item</tspan></text>
             </g>
-            <g id="_Elements_Context_Menu_Item_Touch_3" data-name="_Elements / Context Menu Item (Touch)" class="cls-33" transform="translate(0 124)">
-              <rect id="Base_Fill_3" data-name="Base (Fill)" class="cls-18" width="240" height="40"/>
-              <text id="List_Item-3" data-name="List Item" class="cls-34" transform="translate(11 26)"><tspan x="0" y="0">List Item</tspan></text>
+            <g id="_Elements_Context_Menu_Item_Touch_3"    class="cls-33" transform="translate(0 124)">
+              <rect id="Base_Fill_3"    class="cls-18" width="240" height="40"/>
+              <text id="List_Item-3"    class="cls-34" transform="translate(11 26)"><tspan x="0" y="0">List Item</tspan></text>
             </g>
-            <g id="_Elements_Context_Menu_Item_Touch_4" data-name="_Elements / Context Menu Item (Touch)" class="cls-33" transform="translate(0 84)">
-              <rect id="Base_Fill_4" data-name="Base (Fill)" class="cls-18" width="240" height="40"/>
-              <text id="List_Item-4" data-name="List Item" class="cls-34" transform="translate(11 26)"><tspan x="0" y="0">List Item</tspan></text>
+            <g id="_Elements_Context_Menu_Item_Touch_4"    class="cls-33" transform="translate(0 84)">
+              <rect id="Base_Fill_4"    class="cls-18" width="240" height="40"/>
+              <text id="List_Item-4"    class="cls-34" transform="translate(11 26)"><tspan x="0" y="0">List Item</tspan></text>
             </g>
-            <g id="_Elements_Context_Menu_Item_Touch_5" data-name="_Elements / Context Menu Item (Touch)" class="cls-33" transform="translate(0 44)">
-              <rect id="Base_Fill_5" data-name="Base (Fill)" class="cls-18" width="240" height="40"/>
-              <text id="List_Item-5" data-name="List Item" class="cls-34" transform="translate(11 26)"><tspan x="0" y="0">List Item</tspan></text>
+            <g id="_Elements_Context_Menu_Item_Touch_5"    class="cls-33" transform="translate(0 44)">
+              <rect id="Base_Fill_5"    class="cls-18" width="240" height="40"/>
+              <text id="List_Item-5"    class="cls-34" transform="translate(11 26)"><tspan x="0" y="0">List Item</tspan></text>
             </g>
-            <g id="_Elements_Context_Menu_Item_Touch_6" data-name="_Elements / Context Menu Item (Touch)" class="cls-33" transform="translate(0 4)">
-              <rect id="Base_Fill_6" data-name="Base (Fill)" class="cls-18" width="240" height="40"/>
-              <text id="List_Item-6" data-name="List Item" class="cls-34" transform="translate(11 26)"><tspan x="0" y="0">List Item</tspan></text>
+            <g id="_Elements_Context_Menu_Item_Touch_6"    class="cls-33" transform="translate(0 4)">
+              <rect id="Base_Fill_6"    class="cls-18" width="240" height="40"/>
+              <text id="List_Item-6"    class="cls-34" transform="translate(11 26)"><tspan x="0" y="0">List Item</tspan></text>
             </g>
           </g>
         </g>
       </g>
     </g>
-    <line id="Line_6" data-name="Line 6" class="cls-16" y1="220" x2="218" transform="translate(37.5 1732.5)"/>
-    <line id="Line_7" data-name="Line 7" class="cls-16" x1="218" y1="220" transform="translate(37.5 1732.5)"/>
+    <line id="Line_6"  class="cls-16" y1="220" x2="218" transform="translate(37.5 1732.5)"/>
+    <line id="Line_7"  class="cls-16" x1="218" y1="220" transform="translate(37.5 1732.5)"/>
     <text id="Masks." class="cls-14" transform="translate(280 2100)"><tspan x="0" y="24">Masks.</tspan></text>
-    <text id="_Sed_ut_perspiciatis_unde_omnis_iste_natus_error_sit_voluptatem_accusantium_doloremque_laudantium_totam_rem_aperiam_eaque_ipsa_quae_ab_illo_inventore_veritatis_et_quasi_architecto_beatae_vitae_dicta_sunt_explicabo._Nemo_enim_ipsam_voluptatem_quia_volupta-4" data-name="&quot;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia volupta" class="cls-13" transform="translate(52 2199)"><tspan x="45.853" y="10">&quot;Sed ut perspiciatis unde omnis iste natus error sit </tspan><tspan x="14.631" y="32">voluptatem accusantium doloremque laudantium, totam </tspan><tspan x="6.191" y="54">rem aperiam, eaque ipsa quae ab illo inventore veritatis et </tspan></text>
-    <line id="Line_8" data-name="Line 8" class="cls-16" y1="220" x2="218" transform="translate(35.5 2429.5)"/>
-    <line id="Line_9" data-name="Line 9" class="cls-16" x1="218" y1="220" transform="translate(35.5 2429.5)"/>
-    <g id="Rectangle_10" data-name="Rectangle 10" class="cls-15" transform="translate(96 2365)">
+    <text id="_Sed_ut_perspiciatis_unde_omnis_iste_natus_error_sit_voluptatem_accusantium_doloremque_laudantium_totam_rem_aperiam_eaque_ipsa_quae_ab_illo_inventore_veritatis_et_quasi_architecto_beatae_vitae_dicta_sunt_explicabo._Nemo_enim_ipsam_voluptatem_quia_volupta-4"  class="cls-13" transform="translate(52 2199)"><tspan x="45.853" y="10">&quot;Sed ut perspiciatis unde omnis iste natus error sit </tspan><tspan x="14.631" y="32">voluptatem accusantium doloremque laudantium, totam </tspan><tspan x="6.191" y="54">rem aperiam, eaque ipsa quae ab illo inventore veritatis et </tspan></text>
+    <line id="Line_8"  class="cls-16" y1="220" x2="218" transform="translate(35.5 2429.5)"/>
+    <line id="Line_9"  class="cls-16" x1="218" y1="220" transform="translate(35.5 2429.5)"/>
+    <g id="Rectangle_10"  class="cls-15" transform="translate(96 2365)">
       <rect class="cls-40" width="44" height="41"/>
       <rect class="cls-1" x="0.5" y="0.5" width="43" height="40"/>
     </g>
-    <g id="Rectangle_11" data-name="Rectangle 11" class="cls-35" transform="translate(149 2365)">
+    <g id="Rectangle_11"  class="cls-35" transform="translate(149 2365)">
       <rect class="cls-40" width="44" height="41"/>
       <rect class="cls-1" x="0.5" y="0.5" width="43" height="40"/>
     </g>
-    <g id="Rectangle_13" data-name="Rectangle 13" class="cls-36" transform="translate(299 2585)">
+    <g id="Rectangle_13"  class="cls-36" transform="translate(299 2585)">
       <rect class="cls-40" width="74" height="22"/>
       <rect class="cls-1" x="0.5" y="0.5" width="73" height="21"/>
     </g>
     <text id="button" class="cls-13" transform="translate(354 2600)"><tspan x="-35.086" y="0">button</tspan></text>
-    <text id="_3d." data-name="3d." class="cls-14" transform="translate(38 2799)"><tspan x="0" y="24">3d.</tspan></text>
-    <text id="_Sed_ut_perspiciatis_unde_omnis_iste_natus_error_sit_voluptatem_accusantium_doloremque_laudantium_totam_rem_aperiam_eaque_ipsa_quae_ab_illo_inventore_veritatis_et_quasi_architecto_beatae_vitae_dicta_sunt_explicabo._Nemo_enim_ipsam_voluptatem_quia_volupta-5" data-name="&quot;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia volupta" class="cls-13" transform="translate(52 2918)"><tspan x="0" y="10">&quot;Sed ut perspiciatis unde omnis iste natus error sit </tspan><tspan x="0" y="32">voluptatem accusantium doloremque laudantium, totam </tspan><tspan x="0" y="54">rem aperiam, eaque ipsa quae ab illo inventore veritatis et </tspan></text>
-    <g id="Ellipse_1" data-name="Ellipse 1" class="cls-15" transform="translate(55 3080)">
+    <text id="_3d."  class="cls-14" transform="translate(38 2799)"><tspan x="0" y="24">3d.</tspan></text>
+    <text id="_Sed_ut_perspiciatis_unde_omnis_iste_natus_error_sit_voluptatem_accusantium_doloremque_laudantium_totam_rem_aperiam_eaque_ipsa_quae_ab_illo_inventore_veritatis_et_quasi_architecto_beatae_vitae_dicta_sunt_explicabo._Nemo_enim_ipsam_voluptatem_quia_volupta-5" class="cls-13" transform="translate(52 2918)"><tspan x="0" y="10">&quot;Sed ut perspiciatis unde omnis iste natus error sit </tspan><tspan x="0" y="32">voluptatem accusantium doloremque laudantium, totam </tspan><tspan x="0" y="54">rem aperiam, eaque ipsa quae ab illo inventore veritatis et </tspan></text>
+    <g id="Ellipse_1"  class="cls-15" transform="translate(55 3080)">
       <circle class="cls-40" cx="94.5" cy="94.5" r="94.5"/>
       <circle class="cls-1" cx="94.5" cy="94.5" r="94"/>
     </g>
-    <g id="Ellipse_2" data-name="Ellipse 2" class="cls-15" transform="translate(126 3063)">
+    <g id="Ellipse_2"  class="cls-15" transform="translate(126 3063)">
       <circle class="cls-40" cx="96" cy="96" r="96"/>
       <circle class="cls-1" cx="96" cy="96" r="95.5"/>
     </g>
-    <g id="Ellipse_3" data-name="Ellipse 3" class="cls-15" transform="translate(192 3053)">
+    <g id="Ellipse_3"  class="cls-15" transform="translate(192 3053)">
       <circle class="cls-40" cx="95" cy="95" r="95"/>
       <circle class="cls-1" cx="95" cy="95" r="94.5"/>
     </g>
-    <g id="Path_5" data-name="Path 5" class="cls-4" transform="translate(-0.369 3428)">
+    <g id="Path_5"  class="cls-4" transform="translate(-0.369 3428)">
       <path class="cls-40" d="M 0.5000482201576233 743.4224243164063 L 0.5000482201576233 -17.5816764831543 L 422.8689575195313 46.96250915527344 L 422.8689575195313 684.114013671875 L 0.5000482201576233 743.4224243164063 Z"/>
       <path class="cls-41" d="M 0.99993896484375 -16.99951171875 L 0.99993896484375 742.8472290039063 L 422.3688354492188 683.6792602539063 L 422.3688354492188 47.3919677734375 L 0.99993896484375 -16.99951171875 M -6.103515625e-05 -18.1639404296875 L 423.3688354492188 46.533203125 L 423.3688354492188 684.5487060546875 L -6.103515625e-05 743.9974975585938 L -6.103515625e-05 -18.1639404296875 Z"/>
     </g>
     <text id="Contact." class="cls-14" transform="translate(268 3502)"><tspan x="0" y="24">Contact.</tspan></text>
-    <g id="Rectangle_15" data-name="Rectangle 15" class="cls-15" transform="translate(50 3825)">
+    <g id="Rectangle_15"  class="cls-15" transform="translate(50 3825)">
       <rect class="cls-40" width="315" height="188"/>
       <rect class="cls-1" x="0.5" y="0.5" width="314" height="187"/>
     </g>
-    <g id="Repeat_Grid_1" data-name="Repeat Grid 1" class="cls-37" transform="translate(50 3633)">
+    <g id="Repeat_Grid_1"  class="cls-37" transform="translate(50 3633)">
       <g transform="translate(-50 -3633)">
-        <g id="Rectangle_16" data-name="Rectangle 16" class="cls-15" transform="translate(50 3633)">
+        <g id="Rectangle_16"  class="cls-15" transform="translate(50 3633)">
           <rect class="cls-40" width="315" height="31"/>
           <rect class="cls-1" x="0.5" y="0.5" width="314" height="30"/>
         </g>
       </g>
       <g transform="translate(-50 -3582)">
-        <g id="Rectangle_16-2" data-name="Rectangle 16" class="cls-15" transform="translate(50 3633)">
+        <g id="Rectangle_16-2"    class="cls-15" transform="translate(50 3633)">
           <rect class="cls-40" width="315" height="31"/>
           <rect class="cls-1" x="0.5" y="0.5" width="314" height="30"/>
         </g>
       </g>
       <g transform="translate(-50 -3531)">
-        <g id="Rectangle_16-3" data-name="Rectangle 16" class="cls-15" transform="translate(50 3633)">
+        <g id="Rectangle_16-3"    class="cls-15" transform="translate(50 3633)">
           <rect class="cls-40" width="315" height="31"/>
           <rect class="cls-1" x="0.5" y="0.5" width="314" height="30"/>
         </g>
