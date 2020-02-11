@@ -4,10 +4,10 @@ body, html {
 
 
 .bg {
-	background-image: url("/public_html/documentation/styles/bg.jpg");
+	background-image: url("/public_html/documentation/pics/bg1.jpg");
 
 	/* Full height */
-	height: 100%;
+	width: 100%;
 
 	/* Center and scale the image nicely */
 	background-position: center;
