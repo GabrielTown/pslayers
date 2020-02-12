@@ -9,15 +9,47 @@ body, html {
 	display: flex;
 }
 
-.opacity-image {
-	width: 85%;
-	align-content: center;
-	margin: 0 auto 0 auto;
+.intro-image {
+	position: relative;
+	width: 100%;
 }
 
-.opacity-sidebar {
-	width: 65%;
-	align-content: center;
-	margin: 0 auto 0 auto;
-
+.image {
+	position: absolute;
 }
+
+.allVisible {
+	z-index: 7;
+}
+
+.greenGone {
+	z-index: 0;
+}
+
+.blueGone {
+	z-index: 1;
+}
+
+.faceGone {
+	z-index: 2;
+}
+
+.allGone {
+	z-index: 3;
+}
+
+.allColorsGone {
+	z-index: 4;
+}
+
+.onlyGreen {
+	z-index: 5;
+}
+
+.onlyBlue {
+	z-index: 6;
+}
+
+#IntroSidePanel {
+	width: 45%;
+	}

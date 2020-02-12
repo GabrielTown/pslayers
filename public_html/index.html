@@ -14,7 +14,13 @@
 	<title>Photoshop Layers</title>
 </head>
 <body>
-<br>
+<!-- Image and text -->
+<nav class="navbar navbar-dark bg-dark">
+	<a class="navbar-brand" href="#">
+		<img src="pics/logo.png" height="45" width="60" class="d-inline-block align-center" alt=""/>
+		Photoshop Layers
+	</a>
+</nav>
 <br>
 	<section class="container-fluid">
 		<div class="intro">
@@ -31,13 +37,36 @@
 				</p>
 			</div>
 			<div class="col-lg-4 col-md-9 col-sm-12">
-				<div class="opacity-image">
-					<img src="pics/intro/layer-basics.jpg"/>
+				<div class="intro-image">
+					<div class="allVisible image">
+						<img class="img-fluid" alt="all-visible" src="pics/intro/layer-basics.jpg"/>
+					</div>
+					<div class="greenGone image">
+						<img class="img-fluid" alt="green-gone" src="pics/intro/layer-basics-green-gone.jpg"/>
+					</div>
+					<div class="blueGone image" >
+						<img class="img-fluid" alt="blue-gone" src="pics/intro/layer-basics-blue-gone.jpg"/>
+					</div>
+					<div class="faceGone image">
+						<img class="img-fluid" alt="face-gone" src="pics/intro/layer-basics-face-gone.jpg"/>
+					</div>
+					<div class="allGone image">
+						<img class="img-fluid" alt="all-gone" src="pics/intro/layer-basics-all-gone.jpg"/>
+					</div>
+					<div class="allColorsGone image">
+						<img class="img-fluid" alt="all-colors-gone" src="pics/intro/layer-basics-all-colors-gone.jpg"/>
+					</div>
+					<div class="onlyGreen image">
+						<img class="img-fluid" alt="only-green" src="pics/intro/layer-basics-only-green.jpg"/>
+					</div>
+					<div class="onlyBlue image">
+						<img class="img-fluid" alt="only-blue" src="pics/intro/layer-basics-only-blue.jpg"/>
+					</div>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-12">
-				<div class="opacity-sidebar">
-					<img src="pics/intro/side-bar-intro.jpg" id="sidePanel" />
+				<div class="intro-sidebar">
+					<img class="img-fluid" src="pics/intro/side-bar-intro.jpg" id="introSidePanel" alt="intro-sidebar"/>
 				</div>
 			</div>
 		</div>
