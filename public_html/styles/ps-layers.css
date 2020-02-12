@@ -4,6 +4,14 @@ body, html {
 	background-color: #4a4a4a;
 }
 
+h2 {
+	margin-bottom: 1em;
+}
+
+.row {
+	margin-bottom: 1em;
+}
+
 /*intro section*/
 .intro {
 	margin-bottom: 3em;
@@ -63,17 +71,42 @@ body, html {
 
 
 /*opacity section*/
+.opacity {
+	background-color: #4a4a4a;
+}
+
 .opacity h2 {
 	text-align: right;
 }
 
-#opacityBG, #opactiyCircle {
+.opacity img {
+	border: solid #707070;
+}
+
+.opacity p {
+	text-align: right;
+}
+
+#wrapper {
+	position: relative;
+	width: 100%;
+}
+
+
+.opacityBG {
+	width: 100%;
+}
+
+.opacityCircle {
 	position: absolute;
-	margin:auto;
-	top:0;
-	right:0;
-	bottom:0;
-	left:0;
+	top: 0;
+	width: 100%;
 }
+
+
+.opacity-sidebar {
+	width: 100%;
 }
+
+
 
