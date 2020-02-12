@@ -9,15 +9,13 @@ body, html {
 	margin-bottom: 3em;
 	height: 100%;
 }
+
 .intro img {
 	border: solid #707070;
 }
 
 .intro-image {
-	position: relative;
-	display: block;
 	width: 100%;
-	height: 100%;
 }
 
 /*
@@ -60,9 +58,7 @@ body, html {
 */
 
 .intro-sidebar {
-	display: block;
 	width: 100%;
-	z-index: 7;
 }
 
 
@@ -70,3 +66,14 @@ body, html {
 .opacity h2 {
 	text-align: right;
 }
+
+#opacityBG, #opactiyCircle {
+	position: absolute;
+	margin:auto;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+}
+}
+
