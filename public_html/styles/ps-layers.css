@@ -9,12 +9,11 @@ h2 {
 }
 
 .row {
-	margin-bottom: 1em;
+	margin-bottom: 4.5em;
 }
 
 /*intro section*/
 .intro {
-	margin-bottom: 3em;
 	height: 100%;
 }
 
@@ -91,7 +90,6 @@ h2 {
 	position: relative;
 	width: 100%;
 }
-
 
 .opacityBG {
 	width: 100%;
