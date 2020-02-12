@@ -1,16 +1,23 @@
 body, html {
 	height: 100%;
+	color: white;
+	background-color: #4a4a4a;
 }
 
+.intro img {
+	border: solid #707070;
+	display: flex;
+}
 
-.bg {
-	background-image: url("/public_html/documentation/pics/bg1.jpg");
+.opacity-image {
+	width: 85%;
+	align-content: center;
+	margin: 0 auto 0 auto;
+}
 
-	/* Full height */
-	width: 100%;
+.opacity-sidebar {
+	width: 65%;
+	align-content: center;
+	margin: 0 auto 0 auto;
 
-	/* Center and scale the image nicely */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
