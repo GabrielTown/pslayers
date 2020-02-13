@@ -107,7 +107,7 @@ h2 {
 
 /*blend option section*/
 .blendOptions img {
-	border: solid #707070;
+	/*border: solid #707070;*/
 }
 
 .blendImage {
@@ -115,5 +115,5 @@ h2 {
 }
 
 .blendSidebar {
-	width: 100%;
+	width: 99%;
 }
