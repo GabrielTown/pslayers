@@ -78,10 +78,6 @@ h2 {
 	text-align: right;
 }
 
-.opacity img {
-	border: solid #707070;
-}
-
 .opacity p {
 	text-align: right;
 }
@@ -95,6 +91,10 @@ h2 {
 	width: 100%;
 }
 
+#opacityBG {
+	border: solid #707070;
+}
+
 .opacityCircle {
 	position: absolute;
 	top: 0;
@@ -103,6 +103,23 @@ h2 {
 
 .opacitySidebar {
 	width: 100%;
+}
+
+#op-sb-bottom {
+	border-left: solid #707070;
+	border-bottom: solid #707070;
+	border-right: solid #707070;
+}
+
+#op-sb-middle {
+	border-right: solid #707070;
+	border-left: solid #707070;
+}
+
+#op-sb-top {
+	border-left: solid #707070;
+	border-top: solid #707070;
+	border-right: solid #707070;
 }
 
 /*blend option section*/
