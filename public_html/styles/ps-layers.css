@@ -106,14 +106,33 @@ h2 {
 }
 
 /*blend option section*/
-.blendOptions img {
-	/*border: solid #707070;*/
-}
+
 
 .blendImage {
 	width: 100%;
 }
 
+#blendImage {
+	border: solid #707070;
+}
+
 .blendSidebar {
-	width: 99%;
+	width: 100%;
+}
+
+#bo-sb-bottom {
+	border-left: solid #707070;
+	border-bottom: solid #707070;
+	border-right: solid #707070;
+}
+
+#bo-sb-middle {
+	border-right: solid #707070;
+	border-left: solid #707070;
+}
+
+#bo-sb-top {
+	border-left: solid #707070;
+	border-top: solid #707070;
+	border-right: solid #707070;
 }
