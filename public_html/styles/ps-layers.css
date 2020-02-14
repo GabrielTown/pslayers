@@ -13,61 +13,45 @@ h2 {
 }
 
 /*intro section*/
-.intro {
-	height: 100%;
-}
 
-.intro img {
-	border: solid #707070;
-}
-
-.intro-image {
+.introImage {
 	width: 100%;
 }
 
-/*
-.image {
-	position: absolute;
-	display: block;
+#introImage {
+	border: solid #707070;
 }
-
-.allVisible {
-	z-index: 7;
-}
-
-.greenGone {
-	z-index: 0;
-}
-
-.blueGone {
-	z-index: 1;
-}
-
-.faceGone {
-	z-index: 2;
-}
-
-.allGone {
-	z-index: 3;
-}
-
-.allColorsGone {
-	z-index: 4;
-}
-
-.onlyGreen {
-	z-index: 5;
-}
-
-.onlyBlue {
-	z-index: 6;
-}
-*/
 
 .introSidebar {
 	width: 100%;
 }
 
+#in-sb-bottom {
+	border-left: solid #707070;
+	border-bottom: solid #707070;
+	border-right: solid #707070;
+}
+
+#in-sb-l0 {
+	border-right: solid #707070;
+	border-left: solid #707070;
+}
+
+#in-sb-l1 {
+	border-right: solid #707070;
+	border-left: solid #707070;
+}
+
+#in-sb-l2 {
+	border-right: solid #707070;
+	border-left: solid #707070;
+}
+
+#in-sb-top {
+	border-left: solid #707070;
+	border-top: solid #707070;
+	border-right: solid #707070;
+}
 
 /*opacity section*/
 .opacity {
