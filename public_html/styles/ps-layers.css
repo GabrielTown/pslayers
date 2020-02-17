@@ -14,11 +14,11 @@ h2 {
 
 /*intro section*/
 
-.introImage {
+.imageVisible {
 	width: 100%;
 }
 
-#introImage {
+.introImage {
 	border: solid #707070;
 }
 
@@ -26,28 +26,28 @@ h2 {
 	width: 100%;
 }
 
-#in-sb-bottom {
+.in-sb-bottom {
 	border-left: solid #707070;
 	border-bottom: solid #707070;
 	border-right: solid #707070;
 }
 
-#in-sb-l0 {
+.in-sb-l0 {
 	border-right: solid #707070;
 	border-left: solid #707070;
 }
 
-#in-sb-l1 {
+.in-sb-l1 {
 	border-right: solid #707070;
 	border-left: solid #707070;
 }
 
-#in-sb-l2 {
+.in-sb-l2 {
 	border-right: solid #707070;
 	border-left: solid #707070;
 }
 
-#in-sb-top {
+.in-sb-top {
 	border-left: solid #707070;
 	border-top: solid #707070;
 	border-right: solid #707070;
@@ -66,20 +66,20 @@ h2 {
 	text-align: right;
 }
 
-#wrapper {
+.wrapper {
 	position: relative;
 	width: 100%;
 }
 
-.opacityBG {
+.opacity0 {
 	width: 100%;
 }
 
-#opacityBG {
+.opacityBG {
 	border: solid #707070;
 }
 
-.opacityCircle {
+.opacity1 {
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -89,18 +89,18 @@ h2 {
 	width: 100%;
 }
 
-#op-sb-bottom {
+.op-sb-bottom {
 	border-left: solid #707070;
 	border-bottom: solid #707070;
 	border-right: solid #707070;
 }
 
-#op-sb-middle {
+.op-sb-middle {
 	border-right: solid #707070;
 	border-left: solid #707070;
 }
 
-#op-sb-top {
+.op-sb-top {
 	border-left: solid #707070;
 	border-top: solid #707070;
 	border-right: solid #707070;
@@ -113,7 +113,7 @@ h2 {
 	width: 100%;
 }
 
-#blendImage {
+.blendLeaf {
 	border: solid #707070;
 }
 
@@ -121,19 +121,26 @@ h2 {
 	width: 100%;
 }
 
-#bo-sb-bottom {
+.bo-sb-bottom {
 	border-left: solid #707070;
 	border-bottom: solid #707070;
 	border-right: solid #707070;
 }
 
-#bo-sb-middle {
+.bo-sb-middle {
 	border-right: solid #707070;
 	border-left: solid #707070;
 }
 
-#bo-sb-top {
+.bo-sb-top {
 	border-left: solid #707070;
 	border-top: solid #707070;
 	border-right: solid #707070;
+}
+
+
+/*footer section*/
+footer {
+	color: #707070;
+	text-align: center;
 }
