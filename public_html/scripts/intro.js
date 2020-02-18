@@ -11,7 +11,7 @@ function layerToggle(layer) {
 
 function setDisplayImage() {
 	//check to see if layer0 was clicked
-	if (introLayer0.addEventListener('click') === true) {
+	if ((introLayer0.addEventListener('click')) === true) {
 		console.log("layer0 was clicked");
 		//toggle layer 0
 		layer0 = layerToggle(layer0);
