@@ -29,22 +29,24 @@ h2 {
 .in-sb-bottom {
 	border-left: solid #707070;
 	border-bottom: solid #707070;
-	border-right: solid #707070;
-}
+	border-right: solid #707070;}
 
 .in-sb-l0 {
-	border-right: solid #707070;
 	border-left: solid #707070;
+	border-right: solid #707070;
+	cursor: pointer;
 }
 
 .in-sb-l1 {
-	border-right: solid #707070;
 	border-left: solid #707070;
+	border-right: solid #707070;
+	cursor: pointer;
 }
 
 .in-sb-l2 {
-	border-right: solid #707070;
 	border-left: solid #707070;
+	border-right: solid #707070;
+	cursor: pointer;
 }
 
 .in-sb-top {
@@ -98,6 +100,7 @@ h2 {
 .op-sb-middle {
 	border-right: solid #707070;
 	border-left: solid #707070;
+	cursor: pointer;
 }
 
 .op-sb-top {
@@ -130,6 +133,7 @@ h2 {
 .bo-sb-middle {
 	border-right: solid #707070;
 	border-left: solid #707070;
+	cursor: pointer;
 }
 
 .bo-sb-top {
