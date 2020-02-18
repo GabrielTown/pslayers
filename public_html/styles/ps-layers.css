@@ -119,7 +119,7 @@ h2 {
 	width: 100%;
 }
 
-.blendLeaf {
+.blendOptions {
 	border: solid #707070;
 }
 
@@ -148,12 +148,25 @@ h2 {
 .dropdown-menu {
 	background-color: white;
 	text-align: left;
-	border: solid #707070 1px;
+	border: solid #707070;
 	width: 50%;
 }
 
+.dropdown-menu a{
+	color: #4a4a4a;
+}
 
+li {
+	cursor: pointer;
+}
 
+li:hover {
+	text-decoration: underline;
+}
+
+hr {
+	margin: 0px;
+}
 
 /*footer section*/
 footer {

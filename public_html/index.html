@@ -109,7 +109,7 @@
 
 <!--blend options section-->
 	<section class="container-fluid">
-		<div class="blendOptions">
+		<div class="blendOptionsSection">
 			<h2>
 				Blend <br>
 				Options.
@@ -125,7 +125,7 @@
 				</div>
 				<div class="col-lg-4 col-md-6">
 					<div class="blendImage">
-						<img id="blendLeaf" class="img-fluid blendLeaf" alt="blend options start" src="pics/blend-options/leaf-original.jpg"/>
+						<img id="blendOptions" class="img-fluid blendOptions" alt="blend options start" src="pics/blend-options/leaf-original.jpg"/>
 					</div>
 				</div>
 				<div class="col-lg-3 col-md-6">
@@ -139,14 +139,19 @@
 									<img id="bo-sb-middle" class="img-fluid bo-sb-middle" alt="blending sidebar middle" src="pics/blend-options/New folder/sb-bo-middle.jpg"/>
 								</a>
 								<ul class="dropdown-menu" role="menu" aria-labelledby="imageDropdown">
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Normal</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Darken Color</a></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 3</a></li>
-									<li role="presentation" class="divider"></li>
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 4</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" onclick="normalClick()">Normal</a></li>
+									<hr>
+									<li role="presentation"><a role="menuitem" tabindex="-1" onclick="darkenColorClick()" >Darken Color</a></li>
+									<hr>
+									<li role="presentation"><a role="menuitem" tabindex="-1" onclick="lightenClick()">Lighten</a></li>
+									<hr>
+									<li role="presentation"><a role="menuitem" tabindex="-1" onclick="overlayClick()">Overlay</a></li>
+									<hr>
+									<li role="presentation"><a role="menuitem" tabindex="-1" onclick="vividLightClick()">Vivid Light</a></li>
+									<hr>
+									<li role="presentation"><a role="menuitem" tabindex="-1" onclick="hardMixClick()">Hard Mix</a></li>
 								</ul>
 							</div>
-
 						</div>
 						<div class="row pl-3 mr-auto my-0">
 							<img id="bo-sb-bottom" class="img-fluid bo-sb-bottom" alt="blending sidebar bottom" src="pics/blend-options/New%20folder/sb-bottom.jpg"/>
@@ -172,4 +177,6 @@
 </body>
 <script src="scripts/intro.js"></script>
 <script src="scripts/opacity.js"></script>
+<script src="scripts/blendOptions.js"></script>
+
 </html>
