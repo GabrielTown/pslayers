@@ -145,6 +145,15 @@ h2 {
 	border-right: solid #707070;
 }
 
+.dropdown-menu {
+	background-color: white;
+	text-align: left;
+	border: solid #707070 1px;
+	width: 50%;
+}
+
+
+
 
 /*footer section*/
 footer {

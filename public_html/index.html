@@ -94,10 +94,8 @@
 						<div class="row pl-3 mr-auto my-0">
 							<img class="img-fluid op-sb-top" id="op-sb-top" alt="opacity sidebar top" src="pics/opacity/sb-op-top.jpg"/>
 						</div>
-						<div id="slideContainer">
-							<div class="row pl-3 mr-auto my-0">
-								<img class="img-fluid op-sb-middle" id="op-sb-middle" onclick="" alt="opacity sidebar middle" src="pics/opacity/sb-op-mid.jpg"/>
-							</div>
+						<div class="row pl-3 mr-auto my-0">
+							<img class="img-fluid op-sb-middle" id="op-sb-middle" onclick="dropDown()" alt="opacity sidebar middle" src="pics/opacity/sb-op-mid.jpg"/>
 						</div>
 						<div class="row pl-3 mr-auto my-0">
 							<img class="img-fluid op-sb-bottom" id="op-sb-bottom" alt="opacity sidebar bottom" src="pics/opacity/sb-op-bottom.jpg"/>
@@ -136,7 +134,19 @@
 							<img id="bo-sb-top" class="img-fluid bo-sb-top" alt="blending sidebar top" src="pics/blend-options/New folder/top.jpg"/>
 						</div>
 						<div class="row pl-3 mr-auto my-0">
-							<img id="bo-sb-middle" class="img-fluid bo-sb-middle" alt="blending sidebar middle" src="pics/blend-options/New folder/sb-bo-middle.jpg"/>
+							<div class="dropdown">
+								<a href="#" id="imageDropdown" data-toggle="dropdown">
+									<img id="bo-sb-middle" class="img-fluid bo-sb-middle" alt="blending sidebar middle" src="pics/blend-options/New folder/sb-bo-middle.jpg"/>
+								</a>
+								<ul class="dropdown-menu" role="menu" aria-labelledby="imageDropdown">
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Normal</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Darken Color</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 3</a></li>
+									<li role="presentation" class="divider"></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Menu item 4</a></li>
+								</ul>
+							</div>
+
 						</div>
 						<div class="row pl-3 mr-auto my-0">
 							<img id="bo-sb-bottom" class="img-fluid bo-sb-bottom" alt="blending sidebar bottom" src="pics/blend-options/New%20folder/sb-bottom.jpg"/>
