@@ -105,28 +105,32 @@ function layer2Click() {
 		document.getElementById("in-sb-l2").src="pics/intro/sb/sb-in-l2.jpg";
 		if (layer1 === 'on' && layer0 === 'on') {
 			//set image to original
+			document.getElementById("introImage").src="pics/intro/layer-basics.jpg";
 		} else if (layer1 === 'on' && layer0 === 'off') {
-			//set image to blueGone
+			//set image to blue gone
+			document.getElementById("introImage").src="pics/intro/layer-basics-blue-gone.jpg";
 		} else if (layer1 === 'off' && layer0 === 'on') {
-			//set image to greenGone
+			//set image to green gone
+			document.getElementById("introImage").src="pics/intro/layer-basics-green-gone.jpg";
 		} else {
-			//set image faceOnly
+			//set image only face
+			document.getElementById("introImage").src="pics/intro/layer-basics-only-face.jpg";
 		}
 	} else if (layer2 === 'off') {
 		//change layer2 sidebar image to off
-		document.getElementById("in-sb-l2").src="pics/intro/sb/sb-in-l2-0ff.jpg";
+		document.getElementById("in-sb-l2").src="pics/intro/sb/sb-in-l2-off.jpg";
 		if (layer1 === 'on' && layer0 === 'on') {
-			//set image to faceGone
-
+			//set image to face gone
+			document.getElementById("introImage").src="pics/intro/layer-basics-face-gone.jpg";
 		} else if (layer1 === 'on' && layer0 === 'off') {
-			//set image to greenOnly
-
+			//set image to only green
+			document.getElementById("introImage").src="pics/intro/layer-basics-only-green.jpg";
 		} else if (layer1 === 'off' && layer0 === 'on') {
-			//set image to blueOnly
-
+			//set image to only blue
+			document.getElementById("introImage").src="pics/intro/layer-basics-only-blue.jpg";
 		} else {
 			//set image to allGone
-
+			document.getElementById("introImage").src="pics/intro/layer-basics-all-gone.jpg";
 		}
 	}
 } //end of layer2Click
