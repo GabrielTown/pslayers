@@ -168,9 +168,21 @@ hr {
 	margin: 0px;
 }
 
+/*form section*/
+.contact h2 {
+	text-align: right;
+}
+
+form {
+	margin-bottom: 4em;
+}
+
+.form-group {
+	width: 35%;
+}
+
 /*footer section*/
 footer {
-	color: #707070;
+	color: #4a4a4a;
 	text-align: center;
-	margin-bottom: 0;
 }
