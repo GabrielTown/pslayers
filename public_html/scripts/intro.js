@@ -1,6 +1,4 @@
-let introLayer2 = document.getElementById('in-sb-l2');
-let introLayer1 = document.getElementById('in-sb-l1');
-let introLayer0 = document.getElementById('in-sb-l0');
+
 let layer0 = 'on';
 let layer1 = 'on';
 let layer2 = 'on';
