@@ -1,24 +1,29 @@
 function normalClick() {
-	console.log("normal");
+	document.getElementById("bo-sb-middle").src="pics/blend-options/sb/sb-bo-middle.jpg";
+	document.getElementById("blendOptions").src="pics/blend-options/leaf-original.jpg";
 }
 
 function darkenColorClick() {
-	console.log("you clicked darken color");
+	document.getElementById("bo-sb-middle").src="pics/blend-options/sb/sb-bo-middle-darken.jpg";
 	document.getElementById("blendOptions").src="pics/blend-options/darken-color.jpg";
 }
 
 function lightenClick(){
-	console.log("lighten");
+
+	document.getElementById("blendOptions").src="pics/blend-options/lighten.jpg";
 }
 
 function overlayClick(){
-	console.log("overlay");
+
+	document.getElementById("blendOptions").src="pics/blend-options/overlay.jpg";
 }
 
 function vividLightClick(){
-	console.log("vivid");
+
+	document.getElementById("blendOptions").src="pics/blend-options/vivid-light.jpg";
 }
 
 function hardMixClick(){
-	console.log("hard mix");
+
+	document.getElementById("blendOptions").src="pics/blend-options/hard-mix.jpg";
 }
