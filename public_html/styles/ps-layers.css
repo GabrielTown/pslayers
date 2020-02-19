@@ -177,6 +177,9 @@ form {
 	margin-bottom: 4em;
 }
 
+.form-control {
+	border: solid #707070;
+}
 .contact {
 	width: 45%;
 }

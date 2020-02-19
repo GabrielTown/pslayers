@@ -35,9 +35,7 @@ try {
 	 * so we're using the $_POST superglobal.
 	 **/
 
-	$name = filter_input(INPUT_POST, "name", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 	$email = filter_input(INPUT_POST, "email", FILTER_SANITIZE_EMAIL);
-	$subject = filter_input(INPUT_POST, "subject", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 	$message = filter_input(INPUT_POST, "message", FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
 
 
@@ -49,7 +47,7 @@ try {
 	 * Attach the sender to the message.
 	 * This takes the form of an associative array where $email is the key for the real name.
 	 **/
-	$swiftMessage->setFrom([$email => $name]);
+	$swiftMessage->setFrom([$email=>"random person"]);
 	/**
 	 * Attach the recipients to the message.
 	 * $MAIL_RECIPIENTS is set in mail-config.php
@@ -57,7 +55,7 @@ try {
 	$recipients = $MAIL_RECIPIENTS;
 	$swiftMessage->setTo($recipients);
 	// attach the subject line to the message
-	$swiftMessage->setSubject($subject);
+	$swiftMessage->setSubject("your website is amazing");
 	/**
 	 * Attach the actual message to the message.
 	 *
