@@ -31,7 +31,7 @@ $(document).ready(function(){
 			},
 			message: {
 				required: true,
-				maxlength: 2000
+				maxlength: 140
 			}
 		},
 
@@ -43,7 +43,7 @@ $(document).ready(function(){
 			},
 			message: {
 				required: "Please enter a message.",
-				maxlength: "2000 characters max."
+				maxlength: "140 characters max."
 			}
 		},
 

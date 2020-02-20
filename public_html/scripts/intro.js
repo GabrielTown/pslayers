@@ -80,8 +80,8 @@ function layer1Click(){
 			//set image to only blue
 			document.getElementById("introImage").src="pics/intro/layer-basics-only-blue.jpg";
 		} else if (layer0 === 'off' && layer2 === 'on') {
-			//set image to only green
-			document.getElementById("introImage").src="pics/intro/layer-basics-only-green.jpg";
+			//set image to only face
+			document.getElementById("introImage").src="pics/intro/layer-basics-only-face.jpg";
 		} else {
 			//set image to allGone
 			document.getElementById("introImage").src="pics/intro/layer-basics-all-gone.jpg";
