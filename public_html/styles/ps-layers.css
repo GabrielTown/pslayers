@@ -110,6 +110,33 @@ h2 {
 }
 
 
+.rangeSlider{
+	width: 100%;
+}
+
+.opacitySlider {
+	-webkit-appearance: none;
+	background: #404040  ;
+	width: 50%;
+	height: 9px;
+	opacity: 2;
+}
+
+
+.opacitySlider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	cursor: pointer;
+	background: white;
+	width: 20%;
+	height: 15px;
+}
+
+
+.opacitySlider:hover {
+	opacity: 1;
+}
+
+
 
 
 

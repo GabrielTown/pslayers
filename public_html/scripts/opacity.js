@@ -1,16 +1,9 @@
+let rangeslider = document.getElementById("sliderOpacity");
+let output = document.getElementById("opacityDisplayValue");
+output.innerHTML = rangeslider.value;
 
-	//let opactiyString = "opacity:" + opactiyPercent + "; -moz-opacity:" + opacity + "; filter:alpha(opacity=" + opacity + ")";
-	//console.log(opactiyString);
-	function opacityClick() {
-		document.getElementById("op-sb-middle").src="pics/opacity/sb-op-middle-blank.jpg";
-		/*<input type="range" id="opacity" name="Opacity"
-				 min="0" max="100" value="100" step="1">*/
-	}
-
-	function getOpacityValue(opacity) {
-		let opacityPercent = opacity/100;
-	}
-
-	function changeCircleOpacity() {
-		document.getElementById("opacityCircle").style.opacity = opactiyPercent;
-	}
+rangeslider.oninput = function() {
+	output.innerHTML = this.value;
+	let opacityPercent = this.value/100;
+	document.getElementById("opacityCircle").style.opacity = opacityPercent;
+}
