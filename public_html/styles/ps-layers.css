@@ -4,6 +4,11 @@ body, html {
 	background-color: #4a4a4a;
 }
 
+/*a {*/
+/*	text-decoration: underline;*/
+/*	cursor: pointer;*/
+/*}*/
+
 h2 {
 	margin-bottom: 1em;
 }

@@ -22,13 +22,17 @@
 	</a>
 </nav>
 <br>
+<section class="container-fluid">
+	<p>trying to build a <a data-toggle="popover"><u>popover</u></a></p>
+</section>
 
 
 <!--intro section-->
-	<section class="container-fluid">
-		<div class="intro">
-			<h2>Intro.</h2>
-			<div class="row">
+
+<section class="container-fluid">
+	<div class="intro">
+		<h2>Intro.</h2>
+		<div class="row">
 			<div class="col-lg-5 col-md-12 col-sm-12 pb-4">
 				<P>
 					I remember using Photoshop for the first time. I had no idea the best place to start, or even how to start.
@@ -41,8 +45,8 @@
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<div class="imageVisible">
-						<img class="img-fluid introImage" id="introImage" alt="all visible" src="pics/intro/layer-basics.jpg"/>
-			</div>
+					<img class="img-fluid introImage" id="introImage" alt="all visible" src="pics/intro/layer-basics.jpg"/>
+				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
 				<div class="introSidebar">
@@ -62,109 +66,109 @@
 				</div>
 			</div>
 		</div>
-		</div>
-	</section>
+	</div>
+</section>
 
 
 <!--opacity section-->
-	<section class="container-fluid">
-		<div class="opacity">
-			<h2>Opacity.</h2>
-			<div class="row">
-				<div class="order-lg-3 col-lg-5 order-md-1 col-md-12 pb-4">
-					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-					</p>
-					<p>
-						Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
-					</p>
-				</div>
-				<div class="order-lg-1 col-lg-4 order-md-2 col-md-6">
-					<div class="wrapper">
-						<div class="opacity0">
-							<img class="img-fluid opacityBG" id="opacityBG" alt="opacity background" src="pics/opacity/pep-opacity.jpg"/>
-						</div>
-						<div class="opacity1">
-							<img class="img-fluid opacityCircle" id="opacityCircle" alt="opacity circle" src="pics/opacity/pep-opacity.png"/>
-						</div>
+<section class="container-fluid">
+	<div class="opacity">
+		<h2>Opacity.</h2>
+		<div class="row">
+			<div class="order-lg-3 col-lg-5 order-md-1 col-md-12 pb-4">
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+				</p>
+				<p>
+					Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
+				</p>
+			</div>
+			<div class="order-lg-1 col-lg-4 order-md-2 col-md-6">
+				<div class="wrapper">
+					<div class="opacity0">
+						<img class="img-fluid opacityBG" id="opacityBG" alt="opacity background" src="pics/opacity/pep-opacity.jpg"/>
+					</div>
+					<div class="opacity1">
+						<img class="img-fluid opacityCircle" id="opacityCircle" alt="opacity circle" src="pics/opacity/pep-opacity.png"/>
 					</div>
 				</div>
-				<div class="order-lg-2 col-lg-3 order-md-3 col-md-6">
-					<div class="opacitySidebar" id="opacitySidebar">
-						<div class="row pl-3 mr-auto my-0" >
-							<img class="img-fluid op-sb-top" id="op-sb-top" alt="opacity sidebar top" src="pics/opacity/sb-op-top.jpg"/>
+			</div>
+			<div class="order-lg-2 col-lg-3 order-md-3 col-md-6">
+				<div class="opacitySidebar" id="opacitySidebar">
+					<div class="row pl-3 mr-auto my-0" >
+						<img class="img-fluid op-sb-top" id="op-sb-top" alt="opacity sidebar top" src="pics/opacity/sb-op-top.jpg"/>
+					</div>
+					<div class="row pl-3 mr-auto my-0" id="border">
+						<div class="rangeSlider" id="rangeSlider">
+							<input type="range" min="0" max="100" value="100" class="opacitySlider my-auto" id="sliderOpacity">
+							<p class="opacityText my-auto">Opacity: <span id="opacityDisplayValue" >100</span>%</p>
 						</div>
-						<div class="row pl-3 mr-auto my-0" id="border">
-							<div class="rangeSlider" id="rangeSlider">
-								<input type="range" min="0" max="100" value="100" class="opacitySlider my-auto" id="sliderOpacity">
-								<p class="opacityText my-auto">Opacity: <span id="opacityDisplayValue" >100</span>%</p>
-							</div>
-							<img class="img-fluid op-sb-middle" id="op-sb-middle" onclick="opacityClick()" alt="opacity sidebar middle" src="pics/opacity/sb-op-mid.jpg"/>
-						</div>
-						<div class="row pl-3 mr-auto my-0">
-							<img class="img-fluid op-sb-bottom" id="op-sb-bottom" alt="opacity sidebar bottom" src="pics/opacity/sb-op-bottom.jpg"/>
-						</div>
+						<img class="img-fluid op-sb-middle" id="op-sb-middle" onclick="opacityClick()" alt="opacity sidebar middle" src="pics/opacity/sb-op-mid.jpg"/>
+					</div>
+					<div class="row pl-3 mr-auto my-0">
+						<img class="img-fluid op-sb-bottom" id="op-sb-bottom" alt="opacity sidebar bottom" src="pics/opacity/sb-op-bottom.jpg"/>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
 
 <!--blend options section-->
-	<section class="container-fluid">
-		<div class="blendOptionsSection">
-			<h2>
-				Blend <br>
-				Options.
-			</h2>
-			<div class="row">
-				<div class="col-lg-5 col-md-12 pb-4">
-					<p>
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-					</p>
-					<p>
-						Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
-					</p>
+<section class="container-fluid">
+	<div class="blendOptionsSection">
+		<h2>
+			Blend <br>
+			Options.
+		</h2>
+		<div class="row">
+			<div class="col-lg-5 col-md-12 pb-4">
+				<p>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+				</p>
+				<p>
+					Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
+				</p>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="blendImage">
+					<img id="blendOptions" class="img-fluid blendOptions" alt="blend options start" src="pics/blend-options/leaf-original.jpg"/>
 				</div>
-				<div class="col-lg-4 col-md-6">
-					<div class="blendImage">
-						<img id="blendOptions" class="img-fluid blendOptions" alt="blend options start" src="pics/blend-options/leaf-original.jpg"/>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="blendSidebar">
+					<div class="row pl-3 mr-auto my-0">
+						<img id="bo-sb-top" class="img-fluid bo-sb-top" alt="blending sidebar top" src="pics/blend-options/sb/top.jpg"/>
 					</div>
-				</div>
-				<div class="col-lg-3 col-md-6">
-					<div class="blendSidebar">
-						<div class="row pl-3 mr-auto my-0">
-							<img id="bo-sb-top" class="img-fluid bo-sb-top" alt="blending sidebar top" src="pics/blend-options/sb/top.jpg"/>
+					<div class="row pl-3 mr-auto my-0">
+						<div class="dropdown">
+							<a href="#" id="imageDropdown" data-toggle="dropdown">
+								<img id="bo-sb-middle" class="img-fluid bo-sb-middle" alt="blending sidebar middle" src="pics/blend-options/sb/sb-bo-middle.jpg"/>
+							</a>
+							<ul class="dropdown-menu" role="menu" aria-labelledby="imageDropdown">
+								<li role="presentation"><a role="menuitem" tabindex="-1" onclick="normalClick()">Normal</a></li>
+								<hr>
+								<li role="presentation"><a role="menuitem" tabindex="-1" onclick="darkenColorClick()" >Darken</a></li>
+								<hr>
+								<li role="presentation"><a role="menuitem" tabindex="-1" onclick="lightenClick()">Lighten</a></li>
+								<hr>
+								<li role="presentation"><a role="menuitem" tabindex="-1" onclick="overlayClick()">Overlay</a></li>
+								<hr>
+								<li role="presentation"><a role="menuitem" tabindex="-1" onclick="vividLightClick()">Vivid Light</a></li>
+								<hr>
+								<li role="presentation"><a role="menuitem" tabindex="-1" onclick="hardMixClick()">Hard Mix</a></li>
+							</ul>
 						</div>
-						<div class="row pl-3 mr-auto my-0">
-							<div class="dropdown">
-								<a href="#" id="imageDropdown" data-toggle="dropdown">
-									<img id="bo-sb-middle" class="img-fluid bo-sb-middle" alt="blending sidebar middle" src="pics/blend-options/sb/sb-bo-middle.jpg"/>
-								</a>
-								<ul class="dropdown-menu" role="menu" aria-labelledby="imageDropdown">
-									<li role="presentation"><a role="menuitem" tabindex="-1" onclick="normalClick()">Normal</a></li>
-									<hr>
-									<li role="presentation"><a role="menuitem" tabindex="-1" onclick="darkenColorClick()" >Darken</a></li>
-									<hr>
-									<li role="presentation"><a role="menuitem" tabindex="-1" onclick="lightenClick()">Lighten</a></li>
-									<hr>
-									<li role="presentation"><a role="menuitem" tabindex="-1" onclick="overlayClick()">Overlay</a></li>
-									<hr>
-									<li role="presentation"><a role="menuitem" tabindex="-1" onclick="vividLightClick()">Vivid Light</a></li>
-									<hr>
-									<li role="presentation"><a role="menuitem" tabindex="-1" onclick="hardMixClick()">Hard Mix</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="row pl-3 mr-auto my-0">
-							<img id="bo-sb-bottom" class="img-fluid bo-sb-bottom" alt="blending sidebar bottom" src="pics/blend-options/sb/sb-bottom.jpg"/>
-						</div>
+					</div>
+					<div class="row pl-3 mr-auto my-0">
+						<img id="bo-sb-bottom" class="img-fluid bo-sb-bottom" alt="blending sidebar bottom" src="pics/blend-options/sb/sb-bottom.jpg"/>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>
 
 
 <!--form section-->
@@ -218,6 +222,7 @@
 <script src="scripts/intro.js"></script>
 <script src="scripts/opacity.js"></script>
 <script src="scripts/blendOptions.js"></script>
+<script src="scripts/popovers.js"></script>
 </body>
 
 </html>
