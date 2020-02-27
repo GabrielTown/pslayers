@@ -17,11 +17,19 @@ h2 {
 	margin-bottom: 1em;
 }
 
+
+
 .row {
-	margin-bottom: 4.5em;
+	margin-bottom: 5.5em;
 }
 
 /*intro section*/
+.intro {
+	margin-bottom: 5.5em;
+}
+
+
+/*visibility section*/
 
 .imageVisible {
 	width: 100%;
@@ -197,11 +205,11 @@ h2 {
 	color: #4a4a4a;
 }
 
-li {
+.blendOptionsSection li {
 	cursor: pointer;
 }
 
-li:hover {
+.blendOptionsSection li:hover {
 	text-decoration: underline;
 }
 

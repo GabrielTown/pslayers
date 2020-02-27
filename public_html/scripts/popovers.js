@@ -1,4 +1,13 @@
 $(function () {
+	$('[data-toggle="thanks"]').popover({
+		placement : 'auto',
+		trigger: 'hover',
+		html : true,
+		content: '<div class="media mx-auto"><a href="#" class="pull-right"><img src="pics/popovers/thanks.jpg" width=100%" class="media-object mx-auto" alt="Thanks"></a></div>'
+	})
+});
+
+$(function () {
 	$('[data-toggle="sidebar"]').popover({
 		placement : 'auto',
 		trigger: 'hover',
