@@ -26,6 +26,7 @@ $(function () {
 	})
 });
 
+
 $(function () {
 	$('[data-toggle="eye"]').popover({
 		placement : 'auto',
