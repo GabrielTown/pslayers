@@ -32,35 +32,38 @@
 <section class="container-fluid">
 	<div class="intro">
 		<br>
-		<h2>Intro.</h2>
+<!--		<h5>Please, click and read the shaking words before starting.</h5>-->
+		<p id="remove" class="animated infinite shake" onmouseover="removeClass(remove)">
+			This is an interactive tutorial that will teach you three basics of Photoshop Layers: Visibility, Opacity,
+			and Blend Options. Hover over or click <span class="keywords">
+					<strong><u>underline and bold words</u></strong></span> for hints on where to go and what to do.
+			<!--					Think of them as useful versions of <a data-toggle="clippy"><strong><u>Clippy</u></strong></a>.-->
+		</p>
+		<br>
+		<br>
+		<h2>Visibility.</h2>
 		<div class="row">
 			<div class="col-lg-5 col-md-12 col-sm-12 pb-4">
-				<p>Click and read the shaking words.</p>
-				<p id="remove" class="animated infinite shake" onmouseover="removeClass(remove)">
-					This is an interactive tutorial that will teach you three important basics of Photoshop Layers: Visibility, Opacity,
-					and Blend Options. Hover over or click <span class="keywords">
-					<strong><u>underline and bold words</u></strong></span> for hints on where to go and what to do.
-<!--					Think of them as useful versions of <a data-toggle="clippy"><strong><u>Clippy</u></strong></a>.-->
-				</p>
 				<p>
-					To the right or below you'll see an <strong><u onmouseover="addFlash('introImage')">image</u></strong>
-					and a <strong><u onmouseover="addFlash('introSidebar')">Layers sidebar</u></strong> much like you would see
-					inside Photoshop. This particular image is made up of <strong><u onmouseover="addFlash('introLayers')">
+					To the right or below you'll find an <strong><u onclick="addFlash('introImage')" onmouseover="addFlash('introImage')">image</u></strong>
+					and <strong><u onclick="addFlash('introSidebar')" onmouseover="addFlash('introSidebar')">Layers sidebar</u></strong> much like you would have
+					in Photoshop. This particular image is made up of <strong><u onclick="addFlash('introLayers')" onmouseover="addFlash('introLayers')">
 					three layers</u></strong>.
 
 				</p>
 				<p>
-					<u onmouseover="addInfiniteFlash('introLayers')">
-						Click the eye (<img src="pics/popovers/eye.jpg" data-toggle="eye" alt="Eye Button">) inside <strong>each layer</strong> to
-						adjust its visibility.</u> This should give you a good idea of the position (top, middle, bottom) of the three layers.
-					Also, you don't always want to see every layer while editing in Photoshop. Visibility allows you to focus
-					on one or two layers at a time.
+					<strong><u data-toggle="eye" onmouseover="addInfiniteFlash('introLayers')"> Click the eye
+						(<img src="pics/popovers/eye.jpg" alt="Eye Button">) inside each layer</u></strong> to adjust its visibility.
 				</p>
-				<p>
-					*The More You Know: when you see a
-					<a data-toggle="checkered"><strong><u>checkered pattern</u></strong></a> this means that part of the picture
+				<p id="showText">
+					<u onclick="showText()">Learn More</u>
+					<!--After playing with the visibility you should have a good idea of the position (top, middle, bottom) of the three layers.
+					Also, you might not always want to see every layer when editing in Photoshop. Visibility allows us to focus
+					on one or two layers at a time.
+					*The More You Know : a
+					<a data-toggle="checkered"><strong><u>checkered pattern</u></strong></a> means that this part of the picture
 					is invisible. If you save the image as a PNG file the checkered pattern takes on the color of whatever
-					background the image is on.
+					background the image is on.-->
 				</p>
 			</div>
 			<div class="col-lg-4 col-md-6">

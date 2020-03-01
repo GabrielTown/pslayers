@@ -6,7 +6,7 @@ rangeslider.oninput = function() {
 	output.innerHTML = this.value;
 	let opacityPercent = this.value/100;
 	document.getElementById("opacityCircle").style.opacity = opacityPercent;
-}
+};
 
 function opacityClick() {
 	document.getElementById("rangeSlider").style.display = "flex";
