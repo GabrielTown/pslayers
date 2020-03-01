@@ -17,7 +17,13 @@ h2 {
 	margin-bottom: 1em;
 }
 
+u {
+	cursor: pointer;
+}
 
+.flash {
+	animation: flash 1s;
+}
 
 .row {
 	margin-bottom: 5.5em;

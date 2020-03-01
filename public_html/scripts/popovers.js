@@ -15,9 +15,6 @@ $(function () {
 	})
 });
 
-function addFlash(getId){
-
-}
 
 $(function () {
 	$('[data-toggle="eye"]').popover({
