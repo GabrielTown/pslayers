@@ -19,7 +19,7 @@ $(function () {
 $(function () {
 	$('[data-toggle="eye"]').popover({
 		placement : 'auto',
-		trigger: 'hover',
+		trigger: 'click',
 		html : true,
 		content: '<div class="media mx-auto"><a href="#" class="pull-up"><img src="pics/popovers/eyes.jpg" width="100%" class="media-object mx-auto" alt="Sidebar Eyes"></a></div>'
 	})

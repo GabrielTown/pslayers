@@ -27,37 +27,71 @@
 	</a>
 </nav>
 <br>
-<br>
+
 <!--intro section-->
 <section class="container-fluid">
 	<div class="intro">
-		<p class="animated bounce">
-			<strong>Before We Start: </strong>This is an interactive tutorial. Hover over or click <span class="keywords">
-			<strong><u>underline and bold words</u></strong></span> for hints on where to go and what to do. Think of them as useful versions of
-			<a data-toggle="clippy"><strong><u>Clippy</u></strong></a>.
-		</p>
-		<br>
 		<br>
 		<h2>Intro.</h2>
 		<div class="row">
-			<div class="col-lg-7">
-				<p>
-					Welcome to the only Photoshop tutorial (focusing on layers) you'll need today and possibly tomorrow. After completion
-					you'll be a wizard at three Photoshop layer basics:
-				<ul>
-					<li>Visibility</li>
-					<li>Opacity</li>
-					<li>Blend Options</li>
-				</ul>
+			<div class="col-lg-5 col-md-12 col-sm-12 pb-4">
+				<p>Click and read the shaking words.</p>
+				<p id="remove" class="animated infinite shake" onmouseover="removeClass(remove)">
+					This is an interactive tutorial that will teach you three important basics of Photoshop Layers: Visibility, Opacity,
+					and Blend Options. Hover over or click <span class="keywords">
+					<strong><u>underline and bold words</u></strong></span> for hints on where to go and what to do.
+<!--					Think of them as useful versions of <a data-toggle="clippy"><strong><u>Clippy</u></strong></a>.-->
 				</p>
 				<p>
-					Let's get started. To the right or below you'll see an <strong><u onmouseover="addFlash('introImage')">image</u></strong>
-					and a <strong><u onmouseover="addFlash('introSidebar')">Layers sidebar</u></strong>.
+					To the right or below you'll see an <strong><u onmouseover="addFlash('introImage')">image</u></strong>
+					and a <strong><u onmouseover="addFlash('introSidebar')">Layers sidebar</u></strong> much like you would see
+					inside Photoshop. This particular image is made up of <strong><u onmouseover="addFlash('introLayers')">
+					three layers</u></strong>.
+
 				</p>
+				<p>
+					<u onmouseover="addInfiniteFlash('introLayers')">
+						Click the eye (<img src="pics/popovers/eye.jpg" data-toggle="eye" alt="Eye Button">) inside <strong>each layer</strong> to
+						adjust its visibility.</u> This should give you a good idea of the position (top, middle, bottom) of the three layers.
+					Also, you don't always want to see every layer while editing in Photoshop. Visibility allows you to focus
+					on one or two layers at a time.
+				</p>
+				<p>
+					*The More You Know: when you see a
+					<a data-toggle="checkered"><strong><u>checkered pattern</u></strong></a> this means that part of the picture
+					is invisible. If you save the image as a PNG file the checkered pattern takes on the color of whatever
+					background the image is on.
+				</p>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="imageVisible">
+					<img class="img-fluid introImage" id="introImage" alt="all visible" src="pics/intro/layer-basics.jpg"/>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="introSidebar" id="introSidebar">
+					<div class="row pl-3 mr-auto my-0">
+						<img class="img-fluid in-sb-top" id="in-sb-top" alt="intro sidebar top" src="pics/intro/sb/sb-in-top.jpg" />
+					</div>
+					<div id="introLayers">
+						<div class="row pl-3 mr-auto my-0">
+							<img class="img-fluid in-sb-l2" id="in-sb-l2" onclick="layer2Click()" alt="intro sidebar layer 2" src="pics/intro/sb/sb-in-l2.jpg" />
+						</div>
+						<div class="row pl-3 mr-auto my-0">
+							<img class="img-fluid in-sb-l1" id="in-sb-l1" onclick="layer1Click()" alt="intro sidebar layer 1" src="pics/intro/sb/sb-in-l1.jpg" />
+						</div>
+						<div class="row pl-3 mr-auto my-0">
+							<img class="img-fluid in-sb-l0" id="in-sb-l0" onclick="layer0Click()" alt="intro sidebar layer 0" src="pics/intro/sb/sb-in-l0.jpg" />
+						</div>
+					</div>
+					<div class="row pl-3 mr-auto my-0">
+						<img class="img-fluid in-sb-bottom" id="in-sb-bottom" alt="intro sidebar bottom" src="pics/intro/sb/sb-in-bottom.jpg" /></div>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
+
 
 
 <!--visibility section-->
