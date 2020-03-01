@@ -1,4 +1,3 @@
-
 let layer0 = 'on';
 let layer1 = 'on';
 let layer2 = 'on';

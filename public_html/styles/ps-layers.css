@@ -28,8 +28,15 @@ h2 {
 	margin-bottom: 5.5em;
 }
 
+.keywords:hover {
+	-webkit-animation: flash 1s;
+	animation: flash 1s;
+}
 
 /*visibility section*/
+.visibility {
+	text-align: right;
+}
 
 .imageVisible {
 	width: 100%;
@@ -77,13 +84,6 @@ h2 {
 	background-color: #4a4a4a;
 }
 
-.opacity h2 {
-	text-align: right;
-}
-
-.opacity p {
-	text-align: right;
-}
 
 .wrapper {
 	position: relative;
@@ -164,6 +164,10 @@ h2 {
 
 
 /*blend option section*/
+.blendOptionsSection{
+	text-align: right;
+}
+
 .blendImage {
 	width: 100%;
 }
