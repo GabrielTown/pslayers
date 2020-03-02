@@ -49,6 +49,10 @@ u {
 	animation-iteration-count: infinite;;
 }
 
+#more {
+	display: none;
+}
+
 /*visibility section*/
 .imageVisible {
 	width: 100%;
@@ -93,8 +97,15 @@ u {
 
 /*opacity section*/
 .opacity {
-	text-align: right;
 	background-color: #4a4a4a;
+}
+
+.opacity h2{
+	text-align: right;
+}
+
+.opacity p {
+	text-align: right;
 }
 
 
@@ -162,7 +173,7 @@ u {
 	-webkit-appearance: none;
 	cursor: pointer;
 	background: white;
-	width: 15%;
+	width: 18%;
 	height: 15px;
 }
 
@@ -234,8 +245,6 @@ hr {
 .formSection {
 	text-align: right;
 }
-
-
 
 form {
 	margin-bottom: 4em;

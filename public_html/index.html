@@ -50,24 +50,22 @@
 					in Photoshop. This particular image is made up of
 					<strong><u data-toggle="threeLayers" onclick="addFlash('introLayers')" onmouseover="addFlash('introLayers')">
 					three layers</u></strong>.
-
 				</p>
 				<p>
 					<strong><u data-toggle="eye" onmouseover="addInfiniteFlash('introLayers')"> Click the eye
 						(<img src="pics/popovers/eye.jpg" alt="Eye Button">) to the left of each layer</u></strong> to adjust its visibility.
 				</p>
-				<p id="showText">
-					<u onclick="showText()">Learn More</u>
-					<!--After playing with the visibility you should have a good idea of the position (top, middle, bottom) of the three layers.
-					Also, you might not always want to see every layer when editing in Photoshop. Visibility allows us to focus
-					on one or two layers at a time.
-					*The More You Know : a
-					<a data-toggle="checkered"><strong><u>checkered pattern</u></strong></a> means that this part of the picture
-					is invisible. If you save the image as a PNG file the checkered pattern takes on the color of whatever
-					background the image is on.-->
+				<p>
+					After playing with the visibility<span id="dots">...</span><span id="more"> you should have a good idea of
+					the position (top, middle, bottom) of the three layers. Also, you might not always want to see every layer
+					when editing in Photoshop. Visibility allows us to focus on one or two layers at a time. <br><br> *The
+					More You Know : a <a data-toggle="checkered"><strong><u>checkered pattern</u></strong></a> means that this
+					part of the picture is invisible. If you save the image as a PNG file the checkered pattern takes on the color
+					of whatever background the image is on.</span>
 				</p>
+					<button class="btn btn-secondary btn-sm" onclick="readMore()" id="readMore">Read more</button>
 			</div>
-			<div class="col-lg-4 col-md-6">
+				<div class="col-lg-4 col-md-6">
 				<div class="imageVisible">
 					<img class="img-fluid introImage" id="introImage" alt="all visible" src="pics/intro/layer-basics.jpg"/>
 				</div>
@@ -105,14 +103,19 @@
 		<div class="row">
 			<div class="order-lg-3 col-lg-5 order-md-1 col-md-12 pb-4">
 				<p>
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+					Now we have a different <strong><u onclick="addFlash('opacityImage')" onmouseover="addFlash('opacityImage')">image</u></strong>
+					and <strong><u onclick="addFlash('opacitySidebar')" onmouseover="addFlash('opacitySidebar')">Layers sidebar</u></strong>.
+					A couple of differences between this image and the previous one are: this image has only two layers and Layer 1 is
+					selected. You can tell Layer 1 is selected because it is highlighted with a lighter gray.
 				</p>
 				<p>
-					Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
+					<strong><u data-toggle="opacity" onmouseover="addInfiniteFlash('op-sb-middle')"> Click on the Opacity section
+					</u></strong> and a slider will become visible. Use the slider to adjust the opacity of Layer 1. Opacity is a
+					great tool and is enhanced with the next section.
 				</p>
 			</div>
 			<div class="order-lg-1 col-lg-4 order-md-2 col-md-6">
-				<div class="wrapper">
+				<div class="wrapper" id="opacityImage">
 					<div class="opacity0">
 						<img class="img-fluid opacityBG" id="opacityBG" alt="opacity background" src="pics/opacity/pep-opacity.jpg"/>
 					</div>
@@ -129,7 +132,7 @@
 					<div class="row pl-3 mr-auto my-0" id="border">
 						<div class="rangeSlider" id="rangeSlider">
 							<input type="range" min="0" max="100" value="100" class="opacitySlider my-auto" id="sliderOpacity">
-							<p class="opacityText my-auto">Opacity: <span id="opacityDisplayValue" >100</span>%</p>
+							<p class="opacityText py-1 my-auto">Opacity: <span id="opacityDisplayValue" >100</span>%</p>
 						</div>
 						<img class="img-fluid op-sb-middle" id="op-sb-middle" onclick="opacityClick()" alt="opacity sidebar middle" src="pics/opacity/sb-op-mid.jpg"/>
 					</div>
@@ -217,12 +220,32 @@
 			<br>
 			<br>
 			<br>
-			<button type="submit" class="btn btn-secondary mb-2 float-right">Submit</button>
+			<button type="submit" class="btn btn-secondary mb-2">Submit</button>
 		</form>
 		<!--empty area for error or success output-->
 		<div id="output-area"></div>
 	</div>
 </section>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 <!--footer section-->
 <footer class="bg-light py-2">
