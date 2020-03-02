@@ -41,8 +41,7 @@ u {
 }
 
 .flash {
-	animation: flash 1s;
-	animation-iteration-count: 2;
+	animation: flash 2s;
 }
 
 .infiniteFlash {
@@ -94,6 +93,7 @@ u {
 
 /*opacity section*/
 .opacity {
+	text-align: right;
 	background-color: #4a4a4a;
 }
 
@@ -177,10 +177,6 @@ u {
 
 
 /*blend option section*/
-.blendOptionsSection{
-	text-align: right;
-}
-
 .blendImage {
 	width: 100%;
 }
@@ -235,15 +231,16 @@ hr {
 }
 
 /*form section*/
-.contact h2 {
-	/*text-align: right;*/
+.formSection {
+	text-align: right;
 }
+
 
 
 form {
 	margin-bottom: 4em;
 	width: 75%;
-	text-align: left;
+	text-align: right;
 }
 
 .form-control {
@@ -252,7 +249,7 @@ form {
 }
 
 /*footer section*/
-footer {
+footer{
 	color: #4a4a4a;
 	text-align: center;
 }

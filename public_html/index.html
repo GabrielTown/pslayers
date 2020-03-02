@@ -47,13 +47,14 @@
 				<p>
 					To the right or below you'll find an <strong><u onclick="addFlash('introImage')" onmouseover="addFlash('introImage')">image</u></strong>
 					and <strong><u onclick="addFlash('introSidebar')" onmouseover="addFlash('introSidebar')">Layers sidebar</u></strong> much like you would have
-					in Photoshop. This particular image is made up of <strong><u onclick="addFlash('introLayers')" onmouseover="addFlash('introLayers')">
+					in Photoshop. This particular image is made up of
+					<strong><u data-toggle="threeLayers" onclick="addFlash('introLayers')" onmouseover="addFlash('introLayers')">
 					three layers</u></strong>.
 
 				</p>
 				<p>
 					<strong><u data-toggle="eye" onmouseover="addInfiniteFlash('introLayers')"> Click the eye
-						(<img src="pics/popovers/eye.jpg" alt="Eye Button">) inside each layer</u></strong> to adjust its visibility.
+						(<img src="pics/popovers/eye.jpg" alt="Eye Button">) to the left of each layer</u></strong> to adjust its visibility.
 				</p>
 				<p id="showText">
 					<u onclick="showText()">Learn More</u>
@@ -97,62 +98,12 @@
 
 
 
-<!--visibility section-->
-<section class="container-fluid">
-	<div class="visibility">
-		<h2>Visibility.</h2>
-		<div class="row">
-			<div class="order-lg-3 col-lg-5 order-md-1 col-md-12 pb-4">
-				<!--<p>
-					The bottom of the <a data-toggle="sidebar"><strong><u>sidebar</u></strong></a> is the place where we can add layers by clicking the
-					plus button (<img src="pics/popovers/add-layers.jpg" alt="Plus Button">) or delete layers using the trash
-					button (<img src="pics/popovers/trash.jpg" alt="Trash Button">). But for this part of the tutorial we will
-					focus on the left side of the sidebar.
-				</p>-->
-				<p>
-					If we look to the left of each layer on the sidebar we can see an <a data-toggle="eye"><strong><u>eye</u></strong></a>.
-					Go ahead and click the eyes on the sidebar, adjacent  to the woman's image, to toggle the visibility of the
-					three layers. This should give us a good idea of the position (top, middle, bottom) of the three layers.
-					Also, we don't always want to see every layer when editing in Photoshop. Visibility allows us to focus
-					on one or two layers at a time. Hint: when we see a
-					<a data-toggle="checkered"><strong><u>checkered pattern</u></strong></a> this means that part of our picture
-					is invisible. If we save the image as a PNG file the checkered pattern takes on the color of whatever
-					background the image is on.
-				</p>
-			</div>
-			<div class="order-lg-1 col-lg-4 order-md-2 col-md-6">
-				<div class="imageVisible">
-					<img class="img-fluid introImage" id="introImage" alt="all visible" src="pics/intro/layer-basics.jpg"/>
-				</div>
-			</div>
-			<div class="order-lg-2 col-lg-3 order-md-3 col-md-6">
-				<div class="introSidebar" id="introSidebar">
-					<div class="row pl-3 mr-auto my-0">
-						<img class="img-fluid in-sb-top" id="in-sb-top" alt="intro sidebar top" src="pics/intro/sb/sb-in-top.jpg" /></div>
-					<div class="row pl-3 mr-auto my-0">
-						<img class="img-fluid in-sb-l2" id="in-sb-l2" onclick="layer2Click()" alt="intro sidebar layer 2" src="pics/intro/sb/sb-in-l2.jpg" />
-					</div>
-					<div class="row pl-3 mr-auto my-0">
-						<img class="img-fluid in-sb-l1" id="in-sb-l1" onclick="layer1Click()" alt="intro sidebar layer 1" src="pics/intro/sb/sb-in-l1.jpg" />
-					</div>
-					<div class="row pl-3 mr-auto my-0">
-						<img class="img-fluid in-sb-l0" id="in-sb-l0" onclick="layer0Click()" alt="intro sidebar layer 0" src="pics/intro/sb/sb-in-l0.jpg" />
-					</div>
-					<div class="row pl-3 mr-auto my-0">
-						<img class="img-fluid in-sb-bottom" id="in-sb-bottom" alt="intro sidebar bottom" src="pics/intro/sb/sb-in-bottom.jpg" /></div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-
 <!--opacity section-->
 <section class="container-fluid">
 	<div class="opacity">
 		<h2>Opacity.</h2>
 		<div class="row">
-			<div class="col-lg-5 col-md-12 col-sm-12 pb-4">
+			<div class="order-lg-3 col-lg-5 order-md-1 col-md-12 pb-4">
 				<p>
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
 				</p>
@@ -160,7 +111,7 @@
 					Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
 				</p>
 			</div>
-			<div class="col-lg-4 col-md-6">
+			<div class="order-lg-1 col-lg-4 order-md-2 col-md-6">
 				<div class="wrapper">
 					<div class="opacity0">
 						<img class="img-fluid opacityBG" id="opacityBG" alt="opacity background" src="pics/opacity/pep-opacity.jpg"/>
@@ -170,7 +121,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6">
+			<div class="order-lg-2 col-lg-3 order-md-3 col-md-6">
 				<div class="opacitySidebar" id="opacitySidebar">
 					<div class="row pl-3 mr-auto my-0" >
 						<img class="img-fluid op-sb-top" id="op-sb-top" alt="opacity sidebar top" src="pics/opacity/sb-op-top.jpg"/>
@@ -200,7 +151,7 @@
 			Options.
 		</h2>
 		<div class="row">
-			<div class="order-lg-3 col-lg-5 order-md-1 col-md-12 pb-4">
+			<div class="col-lg-5 col-md-12 pb-4">
 				<p>
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
 				</p>
@@ -208,12 +159,12 @@
 					Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
 				</p>
 			</div>
-			<div class="order-lg-1 col-lg-4 order-md-2 col-md-6">
+			<div class="col-lg-4 col-md-6">
 				<div class="blendImage">
 					<img id="blendOptions" class="img-fluid blendOptions" alt="blend options start" src="pics/blend-options/leaf-original.jpg"/>
 				</div>
 			</div>
-			<div class="order-lg-2 col-lg-3 order-md-3 col-md-6">
+			<div class="col-lg-3 col-md-6">
 				<div class="blendSidebar">
 					<div class="row pl-3 mr-auto my-0">
 						<img id="bo-sb-top" class="img-fluid bo-sb-top" alt="blending sidebar top" src="pics/blend-options/sb/top.jpg"/>
@@ -250,24 +201,28 @@
 
 <!--form section-->
 <section class="container-fluid contact">
-	<h2>Contact.</h2>
-	<form id="contactForm" action="../php/" method="post">
-		<div class="form-group">
-			<label for="email">Email Address</label>
-			<input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
-		</div>
-		<div class="form-group">
-			<label for="message">Message</label>
-			<textarea class="form-control" id="message" name="message" placeholder="Tell me what you thought. You have 140 characters. #peace" rows="3"></textarea>
-		</div>
-		<div class="g-recaptcha" data-sitekey="6LfqcNoUAAAAALBZ94QV1gV36PN0_ZBy3ULJnoKr"></div>
-		<br>
-		<button type="submit" class="btn btn-secondary mb-2">Submit</button>
-	</form>
-	<!--empty area for error or success output-->
-	<div id="output-area"></div>
+	<div class="formSection">
+		<h2>Contact.</h2>
+		<form class="contactForm float-right" id="contactForm" action="../php/" method="post">
+			<div class="form-group">
+				<label for="email">Email Address</label>
+				<input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+			</div>
+			<div class="form-group">
+				<label for="message">Message</label>
+				<textarea class="form-control" id="message" name="message" placeholder="Tell me what you thought. You have 140 characters. #peace" rows="3"></textarea>
+			</div>
+			<div class="g-recaptcha float-right" data-sitekey="6LfqcNoUAAAAALBZ94QV1gV36PN0_ZBy3ULJnoKr"></div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<button type="submit" class="btn btn-secondary mb-2 float-right">Submit</button>
+		</form>
+		<!--empty area for error or success output-->
+		<div id="output-area"></div>
+	</div>
 </section>
-
 
 <!--footer section-->
 <footer class="bg-light py-2">
@@ -301,5 +256,4 @@
 <script src="scripts/popovers.js"></script>
 <script src="scripts/animation.js"></script>
 </body>
-
 </html>

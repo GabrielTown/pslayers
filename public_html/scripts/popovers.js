@@ -7,11 +7,11 @@
 	})
 });*/
 $(function () {
-	$('[data-toggle="clippy"]').popover({
+	$('[data-toggle="threeLayers"]').popover({
 		placement : 'auto',
-		trigger: 'hover',
+		trigger: 'click',
 		html : true,
-		content: '<div class="media mx-auto"><a href="#" class="pull-up"><img src="pics/popovers/clippy.jpg" width="100%" class="media-object mx-auto" alt="Microsoft Clippy"></a></div>'
+		content: '<div class="media mx-auto"><a href="#" class="pull-up"><img src="pics/popovers/layersidebar.jpg" width="100%" class="media-object mx-auto" alt="Sidebar Layers"></a></div>'
 	})
 });
 
