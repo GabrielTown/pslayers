@@ -22,6 +22,7 @@ h2 {
 
 u {
 	cursor: pointer;
+	color: #c7ccc9;
 }
 
 
@@ -247,7 +248,7 @@ hr {
 }
 
 form {
-	margin-bottom: 4em;
+	/*margin-bottom: 4em;*/
 	width: 75%;
 	text-align: right;
 }
@@ -262,3 +263,18 @@ footer{
 	color: #4a4a4a;
 	text-align: center;
 }
+
+.foot{
+	size: 70px;
+	margin-bottom: 0;
+	padding-right: 0;
+	padding-left: 0;
+	margin-right: 0;
+	margin-left: 0;
+
+}
+
+/*.padding-0{
+	padding-right: 0;
+	padding-left: 0;
+}*/

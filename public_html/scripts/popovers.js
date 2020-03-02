@@ -41,3 +41,13 @@ $(function () {
 		content: '<div class="media mx-auto"><a href="#" class="pull-up"><img src="pics/popovers/opacitySidebar.jpg" width="100%" class="media-object mx-auto" alt="Sidebar Opacity"></a></div>'
 	})
 });
+
+$(function () {
+	$('[data-toggle="blend"]').popover({
+		placement : 'auto',
+		trigger: 'click',
+		html : true,
+		content: '<div class="media mx-auto"><a href="#" class="pull-up"><img src="pics/popovers/blendsidebar.jpg" width="100%" class="media-object mx-auto" alt="Sidebar Blend Options"></a></div>'
+	})
+});
+

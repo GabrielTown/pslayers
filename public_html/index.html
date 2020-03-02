@@ -32,12 +32,11 @@
 <section class="container-fluid">
 	<div class="intro">
 		<br>
-<!--		<h5>Please, click and read the shaking words before starting.</h5>-->
-		<p id="remove" class="animated infinite shake" onmouseover="removeClass(remove)">
+		<p id="opening">This will continue to shake until you hover over/click and read it:</p>
+		<p id="remove" class="animated infinite shake slow" onmouseleave="removeParagraph(opening)" onmouseenter="removeClass(remove)">
 			This is an interactive tutorial that will teach you three basics of Photoshop Layers: Visibility, Opacity,
-			and Blend Options. Hover over or click <span class="keywords">
-					<strong><u>underline and bold words</u></strong></span> for hints on where to go and what to do.
-			<!--					Think of them as useful versions of <a data-toggle="clippy"><strong><u>Clippy</u></strong></a>.-->
+			and Blend Options. Hover over or click <u onmouseenter="flashKeywords(key1, key2, key3, key4)">underlined
+			and colored words</u> for hints on where to go and what to do.
 		</p>
 		<br>
 		<br>
@@ -45,22 +44,22 @@
 		<div class="row">
 			<div class="col-lg-5 col-md-12 col-sm-12 pb-4">
 				<p>
-					To the right or below you'll find an <strong><u onclick="addFlash('introImage')" onmouseover="addFlash('introImage')">image</u></strong>
-					and <strong><u onclick="addFlash('introSidebar')" onmouseover="addFlash('introSidebar')">Layers sidebar</u></strong> much like you would have
+					To the right or below you'll find an <u id="key1" onclick="addFlash('introImage')" onmouseover="addFlash('introImage')">image</u>
+					and <u id="key2" onclick="addFlash('introSidebar')" onmouseover="addFlash('introSidebar')">Layers sidebar</u> much like you would have
 					in Photoshop. This particular image is made up of
-					<strong><u data-toggle="threeLayers" onclick="addFlash('introLayers')" onmouseover="addFlash('introLayers')">
-					three layers</u></strong>.
+					<u id="key3" data-toggle="threeLayers" onclick="addFlash('introLayers')" onmouseover="addFlash('introLayers')">
+					three layers</u>.
 				</p>
 				<p>
-					<strong><u data-toggle="eye" onmouseover="addInfiniteFlash('introLayers')"> Click the eye
-						(<img src="pics/popovers/eye.jpg" alt="Eye Button">) to the left of each layer</u></strong> to adjust its visibility.
+					<u id="key4" data-toggle="eye" onmouseover="addInfiniteFlash('introLayers')"> Click the eye
+						(<img src="pics/popovers/eye.jpg" alt="Eye Button">) to the left of each layer</u> to adjust its visibility.
 				</p>
 				<p>
 					After playing with the visibility<span id="dots">...</span><span id="more"> you should have a good idea of
 					the position (top, middle, bottom) of the three layers. Also, you might not always want to see every layer
 					when editing in Photoshop. Visibility allows us to focus on one or two layers at a time. <br><br> *The
-					More You Know : a <a data-toggle="checkered"><strong><u>checkered pattern</u></strong></a> means that this
-					part of the picture is invisible. If you save the image as a PNG file the checkered pattern takes on the color
+					More You Know : a <a data-toggle="checkered"><u>checkered pattern</u></a> means that this part of the picture
+					is invisible. If you save the image as a PNG file the checkered pattern takes on the color
 					of whatever background the image is on.</span>
 				</p>
 					<button class="btn btn-secondary btn-sm" onclick="readMore()" id="readMore">Read more</button>
@@ -103,14 +102,14 @@
 		<div class="row">
 			<div class="order-lg-3 col-lg-5 order-md-1 col-md-12 pb-4">
 				<p>
-					Now we have a different <strong><u onclick="addFlash('opacityImage')" onmouseover="addFlash('opacityImage')">image</u></strong>
-					and <strong><u onclick="addFlash('opacitySidebar')" onmouseover="addFlash('opacitySidebar')">Layers sidebar</u></strong>.
+					Now we have a different <u onclick="addFlash('opacityImage')" onmouseover="addFlash('opacityImage')">image</u>
+					and <u onclick="addFlash('opacitySidebar')" onmouseover="addFlash('opacitySidebar')">Layers sidebar</u>.
 					A couple of differences between this image and the previous one are: this image has only two layers and Layer 1 is
 					selected. You can tell Layer 1 is selected because it is highlighted with a lighter gray.
 				</p>
 				<p>
-					<strong><u data-toggle="opacity" onmouseover="addInfiniteFlash('op-sb-middle')"> Click on the Opacity section
-					</u></strong> and a slider will become visible. Use the slider to adjust the opacity of Layer 1. Opacity is a
+					<u data-toggle="opacity" onmouseover="addInfiniteFlash('op-sb-middle')"> Click on the Opacity section
+					</u> and a slider will become visible. Use the slider to adjust the opacity of Layer 1. Opacity is a
 					great tool and is enhanced with the next section.
 				</p>
 			</div>
@@ -156,10 +155,14 @@
 		<div class="row">
 			<div class="col-lg-5 col-md-12 pb-4">
 				<p>
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+					Like the Opacity example there are only two layers in this example and Layer 1 is selected once again.
+					When using the different blending options you will blend the selected layer into the layer below it. This
+					means that in this example you are blending Layer 1 into Layer 0.
 				</p>
 				<p>
-					Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
+					The blending options can be found by <u data-toggle="blend" onmouseover="addInfiniteFlash('bo-sb-middle')">
+					clicking on the word Normal</u>. A dropdown menu will appear. Select different blending options and see
+					how it effects the image.
 				</p>
 			</div>
 			<div class="col-lg-4 col-md-6">
@@ -248,10 +251,20 @@
 
 
 <!--footer section-->
-<footer class="bg-light py-2">
-	<p>
-		PS Layers 2020
-	</p>
+<footer class="bg-light">
+	<div class="row foot">
+		<div class="col-3"></div>
+		<div class="col-2 py-2 mx-0">
+			<a href="https://github.com/GabrielTown/"><img src="pics/github.jpg" width="45"></a>
+		</div>
+		<div class="col-2 py-2 mx-0">
+			<a href="https://townofgabriel.com"><img src="pics/website.jpg" width="50"></a>
+		</div>
+		<div class="col-2 py-2 px-0 mx-0">
+			<a href="www.linkedin.com/in/gabriel-town"><img src="pics/linkedin.jpg" width="48"></a>
+		</div>
+		<div class="col-3"></div>
+	</div>
 </footer>
 
 

@@ -11,6 +11,17 @@ function removeClass(elementId){
 	elementId.removeAttribute("class");
 }
 
+function removeParagraph(paragraphId) {
+	paragraphId.parentNode.removeChild(paragraphId);
+}
+
+function flashKeywords(keyOne, keyTwo, keyThree, keyFour) {
+	document.getElementById(keyOne).classList.add('flash');
+	document.getElementById(keyTwo).classList.add('flash');
+	document.getElementById(keyThree).classList.add('flash');
+	document.getElementById(keyFour).classList.add('flash');
+}
+
 function addInfiniteFlash(imageId) {
 	const image = document.getElementById(imageId);
 	image.classList.add('infiniteFlash');
