@@ -37,11 +37,11 @@ function readMore(dotsId, moreId, readMoreId) {
 
 	if (dots.style.display === "none") {
 		dots.style.display = "inline";
-		btnText.innerHTML = "Read more";
+		btnText.innerHTML = "View Full Text";
 		moreText.style.display = "none";
 	} else {
 		dots.style.display = "none";
-		btnText.innerHTML = "Read less";
+		btnText.innerHTML = "View Less";
 		moreText.style.display = "inline";
 	}
 }

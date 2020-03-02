@@ -27,12 +27,16 @@ u {
 
 
 .row {
-	margin-bottom: 5.5em;
+	margin-bottom: 3em;
 }
 
 /*intro section*/
+.bg1{
+	background-color: #424242;
+}
+
 .intro {
-	margin-bottom: 5.5em;
+	padding-bottom: 3em;
 }
 
 .keywords:hover,
@@ -102,6 +106,8 @@ u {
 
 /*opacity section*/
 .opacity {
+	padding-top: 3em;
+	padding-bottom: 3em;
 	background-color: #4a4a4a;
 }
 
@@ -193,6 +199,11 @@ u {
 
 
 /*blend option section*/
+.blendOptionsSection{
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+
 .blendImage {
 	width: 100%;
 }
@@ -248,11 +259,12 @@ hr {
 
 /*form section*/
 .formSection {
+	padding-bottom: 3em;
+	padding-top: 3em;
 	text-align: right;
 }
 
 form {
-	/*margin-bottom: 4em;*/
 	width: 75%;
 	text-align: right;
 }
