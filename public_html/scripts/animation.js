@@ -1,5 +1,5 @@
-function addFlash(imageId){
-	const image = document.getElementById(imageId);
+function addFlash(imageId) {
+		const image = document.getElementById(imageId);
 	image.classList.add('flash');
 
 		image.addEventListener('animationend', function() {
@@ -41,7 +41,7 @@ function readMore(dotsId, moreId, readMoreId) {
 		moreText.style.display = "none";
 	} else {
 		dots.style.display = "none";
-		btnText.innerHTML = "View Less";
+		btnText.innerHTML = "Read less";
 		moreText.style.display = "inline";
 	}
 }
