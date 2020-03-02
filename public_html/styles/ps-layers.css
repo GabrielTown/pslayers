@@ -54,6 +54,10 @@ u {
 	display: none;
 }
 
+#more2 {
+	display: none;
+}
+
 /*visibility section*/
 .imageVisible {
 	width: 100%;

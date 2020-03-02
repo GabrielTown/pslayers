@@ -30,10 +30,10 @@ function addInfiniteFlash(imageId) {
 	});
 }
 
-function readMore() {
-	const dots = document.getElementById("dots");
-	const moreText = document.getElementById("more");
-	const btnText = document.getElementById("readMore");
+function readMore(dotsId, moreId, readMoreId) {
+	const dots = document.getElementById(dotsId);
+	const moreText = document.getElementById(moreId);
+	const btnText = document.getElementById(readMoreId);
 
 	if (dots.style.display === "none") {
 		dots.style.display = "inline";
