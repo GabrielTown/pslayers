@@ -41,7 +41,7 @@ function readMore(dotsId, moreId, readMoreId) {
 		moreText.style.display = "none";
 	} else {
 		dots.style.display = "none";
-		btnText.innerHTML = "Read less";
+		btnText.innerHTML = "View less";
 		moreText.style.display = "inline";
 	}
 }
