@@ -1,11 +1,4 @@
-/*$(function () {
-	$('[data-toggle="sidebar"]').popover({
-		placement : 'auto',
-		trigger: 'hover',
-		html : true,
-		content: '<div class="media mx-auto"><a href="#" class="pull-right"><img src="pics/intro/side-bar-intro.jpg" width=100%" class="media-object mx-auto" alt="Sample Sidebar"></a></div>'
-	})
-});*/
+
 $(function () {
 	$('[data-toggle="threeLayers"]').popover({
 		placement : 'auto',

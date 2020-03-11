@@ -4,6 +4,14 @@ body, html {
 	background-color: #4a4a4a;
 }
 
+#splash {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #ffffff;
+}
 /*a {*/
 /*	text-decoration: underline;*/
 /*	cursor: pointer;*/
@@ -272,6 +280,10 @@ form {
 .form-control {
 	border: solid #707070;
 	background-color: #424242;
+}
+
+.contact{
+	margin-bottom: 25em;
 }
 
 /*footer section*/
