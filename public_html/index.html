@@ -132,11 +132,10 @@
 	<div class="opacity">
 		<h2>Opacity.</h2>
 		<div class="row">
-			<div class="order-lg-3 col-lg-5 order-md-1 col-md-12 pb-4 opacitySection">
-				<p>
+			<div class="order-lg-3 col-lg-5 order-md-1 col-md-12 pb-4">
+				<p class="opacitySection">
 					Now we have a different
 					<u id="key5"
-						onclick="fadeOut('opacitySection', 'wrapper', 'key5')"
 						onmouseover="fadeOut('opacitySection', 'wrapper', 'key5')"
 					>
 						image
@@ -144,21 +143,23 @@
 					and
 					<u
 						id="key6"
-						onclick="fadeOut('opacitySection', 'opacitySidebar', 'key6')"
-						onmouseover="fadeOut('opacitySection', 'opacitySidebar', 'key6')"
+						onmouseover="fadeOut('opacitySection2', 'opacitySidebar', 'key6')"
 					>
-						Layers sidebar.</u>
+						Layers sidebar.
+					</u>
 					 A couple of differences between this image and the previous one are: this image has only two layers and
 					Layer 1 is selected. You can tell Layer 1 is selected because it is highlighted with a lighter gray.
 				</p>
-				<p>
-					<u data-toggle="opacity" onmouseover="addInfiniteFlash('op-sb-middle')"> Click on the Opacity section
+				<p class="opacitySection action2">
+					<u
+						onmouseover="infiniteFade('opacitySection', 'op-sb-middle', 'action2')"
+					> Click on the Opacity section
 					</u> and a slider will become visible. Use the slider to adjust the opacity of Layer 1. Opacity is a
 					great tool and is enhanced with the next section.
 				</p>
 			</div>
 			<div class="order-lg-1 col-lg-4 order-md-2 col-md-6">
-				<div class="wrapper opacitySection" id="opacityImage">
+				<div class="wrapper opacitySection opacitySection2" id="opacityImage">
 					<div class="opacity0">
 						<img class="img-fluid opacityBG" id="opacityBG" alt="opacity background" src="pics/opacity/pep-opacity.jpg"/>
 					</div>
@@ -168,19 +169,19 @@
 				</div>
 			</div>
 			<div class="order-lg-2 col-lg-3 order-md-3 col-md-6">
-				<div class="opacitySidebar opacitySection" id="opacitySidebar">
+				<div class="opacitySidebar opacitySection2" id="opacitySidebar">
 					<div class="row pl-3 mr-auto my-0" >
-						<img class="img-fluid op-sb-top" id="op-sb-top" alt="opacity sidebar top" src="pics/opacity/sb-op-top.jpg"/>
+						<img class="img-fluid op-sb-top opacitySection" id="op-sb-top" alt="opacity sidebar top" src="pics/opacity/sb-op-top.jpg"/>
 					</div>
 					<div class="row pl-3 mr-auto my-0" id="border">
 						<div class="rangeSlider" id="rangeSlider">
 							<input type="range" min="0" max="100" value="100" class="opacitySlider my-auto" id="sliderOpacity">
 							<p class="opacityText py-1 my-auto">Opacity: <span id="opacityDisplayValue" >100</span>%</p>
 						</div>
-						<img class="img-fluid op-sb-middle" id="op-sb-middle" onclick="opacityClick()" alt="opacity sidebar middle" src="pics/opacity/sb-op-mid.jpg"/>
+						<img class="img-fluid op-sb-middle opacitySection" id="op-sb-middle" onclick="opacityClick()" alt="opacity sidebar middle" src="pics/opacity/sb-op-mid.jpg"/>
 					</div>
 					<div class="row pl-3 mr-auto my-0">
-						<img class="img-fluid op-sb-bottom" id="op-sb-bottom" alt="opacity sidebar bottom" src="pics/opacity/sb-op-bottom.jpg"/>
+						<img class="img-fluid op-sb-bottom opacitySection" id="op-sb-bottom" alt="opacity sidebar bottom" src="pics/opacity/sb-op-bottom.jpg"/>
 					</div>
 				</div>
 			</div>
@@ -198,16 +199,21 @@
 		</h2>
 		<div class="row">
 			<div class="col-lg-5 col-md-12 pb-4">
-				<p>
+				<p class="blendSection">
 					Like the Opacity example there are only two layers in this example, and Layer 1 is selected once again.
 					This means that in this example you are blending Layer 1 into Layer 0.
 				</p>
-				<p>
-					The blending options can be found in the sidebar by <u data-toggle="blend" onmouseover="addInfiniteFlash('bo-sb-middle')">
-					clicking on the word Normal</u>. A dropdown menu will appear. Select different blending options and see
+				<p class="action3">
+					The blending options can be found in the sidebar by
+					<u
+						onmouseover="infiniteFade('blendSection', 'bo-sb-middle', 'action3')"
+					>
+						clicking on the word Normal
+					</u>
+					. A dropdown menu will appear. Select different blending options and see
 					how it effects the image.
 				</p>
-				<p>
+				<p class="blendSection">
 					In this example there were only 5 blending options but<span id="dots2">...</span><span id="more2"> in
 					Photoshop you have a lot more options. By adjusting the opacity along with changing the blending options
 					you can create some unique and beautiful designs. <br><br>
@@ -221,22 +227,22 @@
 						the Brush Tool <br></span>
 					</span>
 				</p>
-				<button class="btn btn-secondary btn-sm" onclick="readMore('dots2', 'more2', 'readMore2')" id="readMore2">View Full Text</button>
+				<button class="btn btn-secondary btn-sm blendSection" onclick="readMore('dots2', 'more2', 'readMore2')" id="readMore2">View Full Text</button>
 			</div>
 			<div class="col-lg-4 col-md-6">
 				<div class="blendImage">
-					<img id="blendOptions" class="img-fluid blendOptions" alt="blend options start" src="pics/blend-options/leaf-original.jpg"/>
+					<img id="blendOptions" class="img-fluid blendOptions blendSection" alt="blend options start" src="pics/blend-options/leaf-original.jpg"/>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
 				<div class="blendSidebar">
 					<div class="row pl-3 mr-auto my-0">
-						<img id="bo-sb-top" class="img-fluid bo-sb-top" alt="blending sidebar top" src="pics/blend-options/sb/top.jpg"/>
+						<img id="bo-sb-top" class="img-fluid bo-sb-top blendSection" alt="blending sidebar top" src="pics/blend-options/sb/top.jpg"/>
 					</div>
 					<div class="row pl-3 mr-auto my-0">
 						<div class="dropdown">
 							<a href="#" id="imageDropdown" data-toggle="dropdown">
-								<img id="bo-sb-middle" class="img-fluid bo-sb-middle" alt="blending sidebar middle" src="pics/blend-options/sb/sb-bo-middle.jpg"/>
+								<img id="bo-sb-middle" class="img-fluid bo-sb-middle blendSection" alt="blending sidebar middle" src="pics/blend-options/sb/sb-bo-middle.jpg"/>
 							</a>
 							<ul class="dropdown-menu" role="menu" aria-labelledby="imageDropdown">
 								<li role="presentation"><a role="menuitem" tabindex="-1" onclick="normalClick()">Normal</a></li>
@@ -254,7 +260,7 @@
 						</div>
 					</div>
 					<div class="row pl-3 mr-auto my-0">
-						<img id="bo-sb-bottom" class="img-fluid bo-sb-bottom" alt="blending sidebar bottom" src="pics/blend-options/sb/sb-bottom.jpg"/>
+						<img id="bo-sb-bottom" class="img-fluid bo-sb-bottom blendSection" alt="blending sidebar bottom" src="pics/blend-options/sb/sb-bottom.jpg"/>
 					</div>
 				</div>
 			</div>

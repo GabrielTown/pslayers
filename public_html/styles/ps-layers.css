@@ -32,7 +32,7 @@ u {
 
 .intro {
 	padding-bottom: 3em;
-	transition: all 3s ease;
+	transition: all 0.6s ease;
 }
 
 .keywords:hover,
@@ -47,7 +47,7 @@ u {
 
 .zoom {
 	transform: scale(1.03);
-	box-shadow: 0 0 1em white;
+	box-shadow: 0 0.1em 1em white;
 
 }
 

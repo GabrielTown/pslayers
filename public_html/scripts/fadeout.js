@@ -14,6 +14,7 @@ function fadeOut(section, doNotFade, id) {
 	}
 }
 
+
 function infiniteFade(section, doNotFade, doNotFade2) {
 	const fade = Array.from(document.querySelectorAll(`.${section}`));
 	const noFade = document.querySelector(`.${doNotFade}`);
@@ -21,10 +22,9 @@ function infiniteFade(section, doNotFade, doNotFade2) {
 
 	fade.forEach(div => div.classList.add('faded'));
 	noFade.classList.remove('faded');
-	noFade.classList.add('zoom');
-
 	noFade2.classList.remove('faded');
-	noFade2.classList.add('zoom');
+
+	noFade.classList.add('zoom');
 
 	noFade.addEventListener("mouseenter", removeFade, false);
 
