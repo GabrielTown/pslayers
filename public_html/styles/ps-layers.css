@@ -4,19 +4,6 @@ body, html {
 	background-color: #4a4a4a;
 }
 
-#splash {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: #ffffff;
-}
-/*a {*/
-/*	text-decoration: underline;*/
-/*	cursor: pointer;*/
-/*}*/
-
 h5 {
 	margin-bottom: 1em;
 }
@@ -33,7 +20,6 @@ u {
 	color: #c7ccc9;
 }
 
-
 .row {
 	margin-bottom: 3em;
 }
@@ -41,16 +27,28 @@ u {
 /*intro section*/
 .bg1{
 	background-color: #424242;
+
 }
 
 .intro {
 	padding-bottom: 3em;
+	transition: all 3s ease;
 }
 
 .keywords:hover,
 .keywords:active{
 	-webkit-animation: flash 1s;
 	animation: flash 1s;
+}
+
+.faded {
+	opacity: 20%;
+}
+
+.zoom {
+	transform: scale(1.03);
+	box-shadow: 0 0 1em white;
+
 }
 
 .flash {

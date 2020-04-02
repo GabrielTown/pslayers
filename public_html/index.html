@@ -42,19 +42,45 @@
 		<br>
 		<h2>Visibility.</h2>
 		<div class="row">
-			<div class="col-lg-5 col-md-12 col-sm-12 pb-4">
-				<p>
-					To the right or below you'll find an <u id="key1" onclick="addFlash('introImage')" onmouseover="addFlash('introImage')">image</u>
-					and <u id="key2" onclick="addFlash('introSidebar')" onmouseover="addFlash('introSidebar')">Layers sidebar</u> much like you would have
-					in Photoshop. This particular image is made up of
-					<u id="key3" data-toggle="threeLayers" onclick="addFlash('introLayers')" onmouseover="addFlash('introLayers')">
-					three layers</u>.
+			<div class="col-lg-5 col-md-12 col-sm-12 pb-4 introSection2">
+				<p class="introSection">
+					To the right or below you'll find an
+					<u
+						id="key1"
+						onclick="fadeOut('introSection', 'introImage', 'key1')"
+						onmouseover="fadeOut('introSection', 'introImage', 'key1')"
+					>
+						image
+					</u>
+					and
+					<u
+						id="key2"
+						onclick="fadeOut('introSection2', 'introSidebar', 'key2')"
+						onmouseover="fadeOut('introSection2', 'introSidebar', 'key2')"
+					>
+						Layers sidebar
+					</u>
+					much like you would have in Photoshop. This particular image is made up of
+					<u
+						id="key3"
+						onclick="fadeOut('introSection', 'introLayers', 'key3')"
+						onmouseover="fadeOut('introSection', 'introLayers', 'key3')"
+					>
+						three layers
+					</u>.
 				</p>
-				<p>
-					<u id="key4" data-toggle="eye" onmouseover="addInfiniteFlash('introLayers')"> Click the eye
-						(<img src="pics/popovers/eye.jpg" alt="Eye Button">) to the left of each layer</u> to adjust its visibility.
+				<p class="introSection action1">
+					<u
+						id="key4"
+						data-toggle="eye"
+						onclick="infiniteFade('introSection', 'introLayers', 'action1')"
+						onmouseover="infiniteFade('introSection', 'introLayers', 'action1')"
+					>
+						Click the eye (<img src="pics/popovers/eye.jpg" alt="Eye Button">) to the left of each layer
+					</u>
+					to adjust its visibility.
 				</p>
-				<p>
+				<p class="introSection">
 					After playing with the visibility<span id="dots">...</span><span id="more"> you should have a good idea of
 					the position (top, middle, bottom) of the three layers. Also, you might not always want to see every layer
 					when editing in Photoshop. Visibility allows us to focus on one or two layers at a time. <br><br> <strong>
@@ -62,31 +88,37 @@
 					is invisible. If you save the image as a PNG file the checkered pattern takes on the color
 					of whatever background the image is on.</span>
 				</p>
-					<button class="btn btn-secondary btn-sm" onclick="readMore('dots', 'more', 'readMore')" id="readMore">View Full Text</button>
+					<button
+						class="btn btn-secondary btn-sm introSection"
+						onclick="readMore('dots', 'more', 'readMore')"
+						id="readMore"
+					>
+						View Full Text
+					</button>
 			</div>
 			<div class="col-lg-4 col-md-6">
-				<div class="imageVisible">
-					<img class="img-fluid introImage" id="introImage" alt="all visible" src="pics/intro/layer-basics.jpg"/>
+				<div class="imageVisible introSection2">
+					<img class="img-fluid introImage introSection" id="introImage" alt="all visible" src="pics/intro/layer-basics.jpg"/>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
-				<div class="introSidebar" id="introSidebar">
+				<div class="introSidebar introSection2" id="introSidebar">
 					<div class="row pl-3 mr-auto my-0">
-						<img class="img-fluid in-sb-top" id="in-sb-top" alt="intro sidebar top" src="pics/intro/sb/sb-in-top.jpg" />
+						<img class="img-fluid in-sb-top introSection" id="in-sb-top" alt="intro sidebar top" src="pics/intro/sb/sb-in-top.jpg" />
 					</div>
-					<div id="introLayers">
+					<div class="introSection introLayers" id="introLayers">
 						<div class="row pl-3 mr-auto my-0">
-							<img class="img-fluid in-sb-l2" id="in-sb-l2" onclick="layer2Click()" alt="intro sidebar layer 2" src="pics/intro/sb/sb-in-l2.jpg" />
+							<img class="img-fluid in-sb-l2 " id="in-sb-l2" onclick="layer2Click()" alt="intro sidebar layer 2" src="pics/intro/sb/sb-in-l2.jpg" />
 						</div>
 						<div class="row pl-3 mr-auto my-0">
-							<img class="img-fluid in-sb-l1" id="in-sb-l1" onclick="layer1Click()" alt="intro sidebar layer 1" src="pics/intro/sb/sb-in-l1.jpg" />
+							<img class="img-fluid in-sb-l1 " id="in-sb-l1" onclick="layer1Click()" alt="intro sidebar layer 1" src="pics/intro/sb/sb-in-l1.jpg" />
 						</div>
 						<div class="row pl-3 mr-auto my-0">
-							<img class="img-fluid in-sb-l0" id="in-sb-l0" onclick="layer0Click()" alt="intro sidebar layer 0" src="pics/intro/sb/sb-in-l0.jpg" />
+							<img class="img-fluid in-sb-l0 " id="in-sb-l0" onclick="layer0Click()" alt="intro sidebar layer 0" src="pics/intro/sb/sb-in-l0.jpg" />
 						</div>
 					</div>
 					<div class="row pl-3 mr-auto my-0">
-						<img class="img-fluid in-sb-bottom" id="in-sb-bottom" alt="intro sidebar bottom" src="pics/intro/sb/sb-in-bottom.jpg" /></div>
+						<img class="img-fluid in-sb-bottom introSection" id="in-sb-bottom" alt="intro sidebar bottom" src="pics/intro/sb/sb-in-bottom.jpg" /></div>
 				</div>
 			</div>
 		</div>
@@ -100,12 +132,24 @@
 	<div class="opacity">
 		<h2>Opacity.</h2>
 		<div class="row">
-			<div class="order-lg-3 col-lg-5 order-md-1 col-md-12 pb-4">
+			<div class="order-lg-3 col-lg-5 order-md-1 col-md-12 pb-4 opacitySection">
 				<p>
-					Now we have a different <u onclick="addFlash('opacityImage')" onmouseover="addFlash('opacityImage')">image</u>
-					and <u onclick="addFlash('opacitySidebar')" onmouseover="addFlash('opacitySidebar')">Layers sidebar</u>.
-					A couple of differences between this image and the previous one are: this image has only two layers and Layer 1 is
-					selected. You can tell Layer 1 is selected because it is highlighted with a lighter gray.
+					Now we have a different
+					<u id="key5"
+						onclick="fadeOut('opacitySection', 'wrapper', 'key5')"
+						onmouseover="fadeOut('opacitySection', 'wrapper', 'key5')"
+					>
+						image
+					</u>
+					and
+					<u
+						id="key6"
+						onclick="fadeOut('opacitySection', 'opacitySidebar', 'key6')"
+						onmouseover="fadeOut('opacitySection', 'opacitySidebar', 'key6')"
+					>
+						Layers sidebar.</u>
+					 A couple of differences between this image and the previous one are: this image has only two layers and
+					Layer 1 is selected. You can tell Layer 1 is selected because it is highlighted with a lighter gray.
 				</p>
 				<p>
 					<u data-toggle="opacity" onmouseover="addInfiniteFlash('op-sb-middle')"> Click on the Opacity section
@@ -114,7 +158,7 @@
 				</p>
 			</div>
 			<div class="order-lg-1 col-lg-4 order-md-2 col-md-6">
-				<div class="wrapper" id="opacityImage">
+				<div class="wrapper opacitySection" id="opacityImage">
 					<div class="opacity0">
 						<img class="img-fluid opacityBG" id="opacityBG" alt="opacity background" src="pics/opacity/pep-opacity.jpg"/>
 					</div>
@@ -124,7 +168,7 @@
 				</div>
 			</div>
 			<div class="order-lg-2 col-lg-3 order-md-3 col-md-6">
-				<div class="opacitySidebar" id="opacitySidebar">
+				<div class="opacitySidebar opacitySection" id="opacitySidebar">
 					<div class="row pl-3 mr-auto my-0" >
 						<img class="img-fluid op-sb-top" id="op-sb-top" alt="opacity sidebar top" src="pics/opacity/sb-op-top.jpg"/>
 					</div>
@@ -282,7 +326,7 @@
 <script src='https://www.google.com/recaptcha/api.js'></script>
 
 <!--local script-->
-<script src="scripts/splash.js"></script>
+<script src="scripts/fadeout.js"></script>
 <script src="scripts/intro.js"></script>
 <script src="scripts/opacity.js"></script>
 <script src="scripts/blendOptions.js"></script>
