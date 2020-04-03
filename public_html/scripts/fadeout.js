@@ -1,36 +1,42 @@
 function fadeOut(section, doNotFade, id) {
+	//get an array of each element of section
 	const fade = Array.from(document.querySelectorAll(`.${section}`));
-	const noFade = document.querySelector(`.${doNotFade}`);
+	//get an array of each element to zoom/unfade
+	const noFade = Array.from(document.querySelectorAll(`.${doNotFade}`));
 
-	fade.forEach(div => div.classList.add('faded'));
-	noFade.classList.remove('faded');
-	noFade.classList.add('zoom');
+	//add faded class o each element in section
+	fade.forEach(element => element.classList.add('faded'));
+	//delete faded class from elements not faded
+	noFade.forEach(element => element.classList.remove('faded'));
+	//add zoom class to not faded elements
+	noFade.forEach(element => element.classList.add('zoom'));
 
+	//once mouse leaves the keyword remove all classes just added
 	document.getElementById(id).addEventListener("mouseout", removeFade, false);
 
 	//remove fade and zoom
 	function removeFade() {
-		fade.forEach(div => div.classList.remove('faded', 'zoom'));
+		fade.forEach(element => element.classList.remove('faded', 'zoom'));
 	}
 }
 
-
+//basically the same as fadeout function, but want to show the text and what to click until the user clicks it
 function infiniteFade(section, doNotFade, doNotFade2) {
 	const fade = Array.from(document.querySelectorAll(`.${section}`));
-	const noFade = document.querySelector(`.${doNotFade}`);
+	const noFade = Array.from(document.querySelectorAll(`.${doNotFade}`));
 	const noFade2 = document.querySelector(`.${doNotFade2}`);
 
-	fade.forEach(div => div.classList.add('faded'));
-	noFade.classList.remove('faded');
+	fade.forEach(element => element.classList.add('faded'));
+	noFade.forEach(element => element.classList.remove('faded'));
+	noFade.forEach(element => element.classList.add('noZoom'));
+
 	noFade2.classList.remove('faded');
 
-	noFade.classList.add('zoom');
-
-	noFade.addEventListener("mouseenter", removeFade, false);
+	noFade.forEach(div => div.addEventListener("click", removeFade, false));
 
 	//remove fade and zoom
 	function removeFade() {
-		fade.forEach(div => div.classList.remove('faded', 'zoom'));
+		fade.forEach(element => element.classList.remove('faded', 'noZoom'));
 	}
 }
 

@@ -32,12 +32,12 @@
 <section class="container-fluid bg1">
 	<div class="intro">
 		<br>
-		<p id="opening">This will continue to shake until you hover over/click and read it:</p>
-		<p id="remove" class="animated infinite shake slow" onmouseleave="removeParagraph(opening)" onmouseenter="removeClass(remove)">
+		<p id="opening"></p>
+		<!--<p id="remove" class="animated infinite shake slow" onmouseleave="removeParagraph(opening)" onmouseenter="removeClass(remove)">
 			This is an interactive tutorial that will teach you three basics of Photoshop Layers: Visibility, Opacity,
 			and Blend Options. Hover over or click <u onmouseenter="flashKeywords('key1', 'key2', 'key3', 'key4')">underlined
 			and colored words</u> for hints on where to go and what to do.
-		</p>
+		</p>-->
 		<br>
 		<br>
 		<h2>Visibility.</h2>
@@ -47,7 +47,6 @@
 					To the right or below you'll find an
 					<u
 						id="key1"
-						onclick="fadeOut('introSection', 'introImage', 'key1')"
 						onmouseover="fadeOut('introSection', 'introImage', 'key1')"
 					>
 						image
@@ -55,15 +54,13 @@
 					and
 					<u
 						id="key2"
-						onclick="fadeOut('introSection2', 'introSidebar', 'key2')"
-						onmouseover="fadeOut('introSection2', 'introSidebar', 'key2')"
+						onmouseover="fadeOut('introSection', 'introSide', 'key2')"
 					>
 						Layers sidebar
 					</u>
 					much like you would have in Photoshop. This particular image is made up of
 					<u
 						id="key3"
-						onclick="fadeOut('introSection', 'introLayers', 'key3')"
 						onmouseover="fadeOut('introSection', 'introLayers', 'key3')"
 					>
 						three layers
@@ -73,7 +70,6 @@
 					<u
 						id="key4"
 						data-toggle="eye"
-						onclick="infiniteFade('introSection', 'introLayers', 'action1')"
 						onmouseover="infiniteFade('introSection', 'introLayers', 'action1')"
 					>
 						Click the eye (<img src="pics/popovers/eye.jpg" alt="Eye Button">) to the left of each layer
@@ -102,23 +98,23 @@
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-6">
-				<div class="introSidebar introSection2" id="introSidebar">
+				<div class="instoSidebar" id="introSidebar">
 					<div class="row pl-3 mr-auto my-0">
-						<img class="img-fluid in-sb-top introSection" id="in-sb-top" alt="intro sidebar top" src="pics/intro/sb/sb-in-top.jpg" />
+						<img class="img-fluid in-sb-top introSide introSection" id="in-sb-top" alt="intro sidebar top" src="pics/intro/sb/sb-in-top.jpg" />
 					</div>
-					<div class="introSection introLayers" id="introLayers">
+					<div id="introLayers">
 						<div class="row pl-3 mr-auto my-0">
-							<img class="img-fluid in-sb-l2 " id="in-sb-l2" onclick="layer2Click()" alt="intro sidebar layer 2" src="pics/intro/sb/sb-in-l2.jpg" />
+							<img class="img-fluid in-sb-l2 introLayers introSide introSection" id="in-sb-l2" onclick="layer2Click()" alt="intro sidebar layer 2" src="pics/intro/sb/sb-in-l2.jpg" />
 						</div>
 						<div class="row pl-3 mr-auto my-0">
-							<img class="img-fluid in-sb-l1 " id="in-sb-l1" onclick="layer1Click()" alt="intro sidebar layer 1" src="pics/intro/sb/sb-in-l1.jpg" />
+							<img class="img-fluid in-sb-l1 introLayers introSide introSection" id="in-sb-l1" onclick="layer1Click()" alt="intro sidebar layer 1" src="pics/intro/sb/sb-in-l1.jpg" />
 						</div>
 						<div class="row pl-3 mr-auto my-0">
-							<img class="img-fluid in-sb-l0 " id="in-sb-l0" onclick="layer0Click()" alt="intro sidebar layer 0" src="pics/intro/sb/sb-in-l0.jpg" />
+							<img class="img-fluid in-sb-l0 introLayers introSide introSection" id="in-sb-l0" onclick="layer0Click()" alt="intro sidebar layer 0" src="pics/intro/sb/sb-in-l0.jpg" />
 						</div>
 					</div>
 					<div class="row pl-3 mr-auto my-0">
-						<img class="img-fluid in-sb-bottom introSection" id="in-sb-bottom" alt="intro sidebar bottom" src="pics/intro/sb/sb-in-bottom.jpg" /></div>
+						<img class="img-fluid in-sb-bottom introSide introSection" id="in-sb-bottom" alt="intro sidebar bottom" src="pics/intro/sb/sb-in-bottom.jpg" /></div>
 				</div>
 			</div>
 		</div>
@@ -143,7 +139,7 @@
 					and
 					<u
 						id="key6"
-						onmouseover="fadeOut('opacitySection2', 'opacitySidebar', 'key6')"
+						onmouseover="fadeOut('opacitySection', 'opacityLayers', 'key6')"
 					>
 						Layers sidebar.
 					</u>
@@ -159,7 +155,7 @@
 				</p>
 			</div>
 			<div class="order-lg-1 col-lg-4 order-md-2 col-md-6">
-				<div class="wrapper opacitySection opacitySection2" id="opacityImage">
+				<div class="wrapper opacitySection" id="opacityImage">
 					<div class="opacity0">
 						<img class="img-fluid opacityBG" id="opacityBG" alt="opacity background" src="pics/opacity/pep-opacity.jpg"/>
 					</div>
@@ -169,19 +165,19 @@
 				</div>
 			</div>
 			<div class="order-lg-2 col-lg-3 order-md-3 col-md-6">
-				<div class="opacitySidebar opacitySection2" id="opacitySidebar">
+				<div class="opacitySidebar" id="opacitySidebar">
 					<div class="row pl-3 mr-auto my-0" >
-						<img class="img-fluid op-sb-top opacitySection" id="op-sb-top" alt="opacity sidebar top" src="pics/opacity/sb-op-top.jpg"/>
+						<img class="img-fluid op-sb-top opacityLayers opacitySection" id="op-sb-top" alt="opacity sidebar top" src="pics/opacity/sb-op-top.jpg"/>
 					</div>
 					<div class="row pl-3 mr-auto my-0" id="border">
 						<div class="rangeSlider" id="rangeSlider">
 							<input type="range" min="0" max="100" value="100" class="opacitySlider my-auto" id="sliderOpacity">
 							<p class="opacityText py-1 my-auto">Opacity: <span id="opacityDisplayValue" >100</span>%</p>
 						</div>
-						<img class="img-fluid op-sb-middle opacitySection" id="op-sb-middle" onclick="opacityClick()" alt="opacity sidebar middle" src="pics/opacity/sb-op-mid.jpg"/>
+						<img class="img-fluid op-sb-middle opacityLayers opacitySection" id="op-sb-middle" onclick="opacityClick()" alt="opacity sidebar middle" src="pics/opacity/sb-op-mid.jpg"/>
 					</div>
 					<div class="row pl-3 mr-auto my-0">
-						<img class="img-fluid op-sb-bottom opacitySection" id="op-sb-bottom" alt="opacity sidebar bottom" src="pics/opacity/sb-op-bottom.jpg"/>
+						<img class="img-fluid op-sb-bottom opacityLayers opacitySection" id="op-sb-bottom" alt="opacity sidebar bottom" src="pics/opacity/sb-op-bottom.jpg"/>
 					</div>
 				</div>
 			</div>
@@ -337,6 +333,6 @@
 <script src="scripts/opacity.js"></script>
 <script src="scripts/blendOptions.js"></script>
 <script src="scripts/popovers.js"></script>
-<script src="scripts/animation.js"></script>
+<script src="scripts/wordStuff.js"></script>
 </body>
 </html>

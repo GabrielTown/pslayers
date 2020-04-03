@@ -46,9 +46,12 @@ u {
 }
 
 .zoom {
-	transform: scale(1.03);
-	box-shadow: 0 0.1em 1em white;
+	transform: scale(1.04);
+	box-shadow: 0 0.1em 0.4em white;
+}
 
+.noZoom {
+	box-shadow: 0 0.1em 0.3em white;
 }
 
 .flash {
@@ -260,7 +263,7 @@ u {
 }
 
 hr {
-	margin: 0px;
+	margin: 0;
 }
 
 /*form section*/
@@ -300,7 +303,3 @@ footer{
 
 }
 
-/*.padding-0{
-	padding-right: 0;
-	padding-left: 0;
-}*/

@@ -1,3 +1,4 @@
+//display checkered pattern when hover over word
 $(function () {
 	$('[data-toggle="checkered"]').popover({
 		placement : 'auto',

@@ -1,11 +1,10 @@
-let rangeslider = document.getElementById("sliderOpacity");
-let output = document.getElementById("opacityDisplayValue");
-output.innerHTML = rangeslider.value;
+const rangeSlider = document.getElementById("sliderOpacity");
+const output = document.getElementById("opacityDisplayValue");
+output.innerHTML = rangeSlider.value;
 
-rangeslider.oninput = function() {
+rangeSlider.oninput = function() {
 	output.innerHTML = this.value;
-	let opacityPercent = this.value/100;
-	document.getElementById("opacityCircle").style.opacity = opacityPercent;
+	document.getElementById("opacityCircle").style.opacity = this.value / 100;
 };
 
 function opacityClick() {
