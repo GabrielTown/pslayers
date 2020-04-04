@@ -1,8 +1,6 @@
 let infiniteFadeOn = false;
 
 function fadeOut(section, doNotFade, id) {
-	if (!infiniteFadeOn) {
-		console.log("here how");
 		//get an array of each element of section
 		const fade = Array.from(document.querySelectorAll(`.${section}`));
 		//get an array of each element to zoom/unfade
@@ -22,13 +20,13 @@ function fadeOut(section, doNotFade, id) {
 		function removeFade() {
 			fade.forEach(element => element.classList.remove('faded', 'zoom'));
 		}
-	}
 	console.log(infiniteFadeOn);
 }
 
 //basically the same as fadeout function, but want to show the text and what to click until the user clicks it
 function infiniteFade(section, doNotFade, doNotFade2) {
 	infiniteFadeOn = true;
+	console.log(infiniteFadeOn);
 	const fade = Array.from(document.querySelectorAll(`.${section}`));
 	const noFade = Array.from(document.querySelectorAll(`.${doNotFade}`));
 	const sentence = document.querySelector(`.${doNotFade2}`);
@@ -39,10 +37,10 @@ function infiniteFade(section, doNotFade, doNotFade2) {
 
 	sentence.classList.remove('faded');
 
-	noFade.forEach(div => div.addEventListener("click", removeFade, false));
+	noFade.forEach(div => div.addEventListener("click", removeInfiniteFade));
 
 	//remove fade and zoom
-	function removeFade() {
+	function removeInfiniteFade() {
 		fade.forEach(element => element.classList.remove('faded', 'noZoom'));
 		infiniteFadeOn = false;
 	}
