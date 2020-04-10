@@ -1,12 +1,13 @@
 let infiniteFadeOn = false;
 
 function fadeOut(section, doNotFade, id) {
+	if (!infiniteFadeOn) {
 		//get an array of each element of section
 		const fade = Array.from(document.querySelectorAll(`.${section}`));
 		//get an array of each element to zoom/unfade
 		const noFade = Array.from(document.querySelectorAll(`.${doNotFade}`));
 
-		//add faded class o each element in section
+		//add faded class to each element in section
 		fade.forEach(element => element.classList.add('faded'));
 		//delete faded class from elements not faded
 		noFade.forEach(element => element.classList.remove('faded'));
@@ -20,6 +21,7 @@ function fadeOut(section, doNotFade, id) {
 		function removeFade() {
 			fade.forEach(element => element.classList.remove('faded', 'zoom'));
 		}
+	}
 	console.log(infiniteFadeOn);
 }
 
@@ -37,7 +39,7 @@ function infiniteFade(section, doNotFade, doNotFade2) {
 
 	sentence.classList.remove('faded');
 
-	noFade.forEach(div => div.addEventListener("click", removeInfiniteFade));
+	noFade.forEach(element => element.addEventListener("click", removeInfiniteFade));
 
 	//remove fade and zoom
 	function removeInfiniteFade() {
