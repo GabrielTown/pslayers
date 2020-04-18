@@ -14,13 +14,10 @@ function fadeOut(section, doNotFade, id) {
 		//add zoom class to not faded elements
 		noFade.forEach(element => element.classList.add('zoom'));
 
-		//once mouse leaves the keyword remove all classes just added
-		document.getElementById(id).addEventListener("mouseout", removeFade, false);
-
-		//remove fade and zoom
-		function removeFade() {
-			fade.forEach(element => element.classList.remove('faded', 'zoom'));
-		}
+		//once mouse leaves the keyword remove all classes just added as long as infinite fade is not on
+		document.getElementById(id).addEventListener("mouseout", () => {
+			!infiniteFadeOn && fade.forEach(element => element.classList.remove('faded', 'zoom'));
+		}, false);
 	}
 	console.log(infiniteFadeOn);
 }
